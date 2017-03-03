@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: for_i
+# key: for_i
+# --
+
+for(int $1 = 0; $1 < $2; $1++)
+{
+    $0;    
+}

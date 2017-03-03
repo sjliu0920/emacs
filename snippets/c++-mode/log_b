@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: log_b
+# key: log_b
+# --
+string pw_time = CVirtualWorldTimer::instance()->get_world_datetime();
+LOG(INFO) << pw_time << " : " << __func__  << " be executed!" << std::endl;

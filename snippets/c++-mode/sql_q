@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: sql_q
+# key: sql_q
+# --
+
+CVirtualWorldDB db (m_account, m_passwd, m_tnsname);
+string cmd = "SELECT $1 "; 
+
+db.ClearVecSearch();
+db.SearchSelfcmd(cmd);
+
+vector<TB_search> search = db.GetVecSearch();
+vector<TB_search>::iterator it = search.begin();
+
+for(it = search.begin(); it != search.end(); it++)
+{
+    $2
+}

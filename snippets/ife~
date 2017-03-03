@@ -1,0 +1,5 @@
+#name : using namespace ... 
+# key: double2
+# --
+using namespace2 ${std};
+$0

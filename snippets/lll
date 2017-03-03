@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: lsj
+# key: lsj
+# --
+
+test $0
+$1

@@ -1,0 +1,126 @@
+;;; -*- coding: utf-8 -*-
+(("/home/double/parallel_world/gopw/src/test.cpp" . 13)
+ ("/home/double/parallel_world/gopw/src/variate_manager.hpp" . 387)
+ ("/home/double/parallel_world/log/"
+  (dired-filename . "/home/double/parallel_world/log/gopw.INFO"))
+ ("/home/double/parallel_world/db/src/"
+  (dired-filename . "/home/double/parallel_world/db/src/CVirtualWorldDB.lis"))
+ ("/home/double/parallel_world/data/"
+  (dired-filename . "/home/double/parallel_world/data/config.json"))
+ ("/home/double/parallel_world/gjson/" . 570)
+ ("/home/double/.emacs.d/plugins/"
+  (dired-filename . "/home/double/.emacs.d/plugins/diredful"))
+ ("/home/double/Documents/org/"
+  (dired-filename . "/home/double/Documents/org/linux.org"))
+ ("/home/double/parallel_world/db/" . 506)
+ ("/home/double/parallel_world/db/src/CVirtualWorldDB.cpp" . 37631)
+ ("/home/double/parallel_world/log/gopw.WARNING" . 1592)
+ ("/home/double/parallel_world/log/gopw.INFO" . 10633)
+ ("/home/double/share/Desgin/data/locate.txt" . 200)
+ ("/home/double/IdeaProjects/PoiReadExcel/"
+  (dired-filename . "/home/double/IdeaProjects/PoiReadExcel/src"))
+ ("/home/double/IdeaProjects/PoiReadExcel/src/"
+  (dired-filename . "/home/double/IdeaProjects/PoiReadExcel/src/PoiReadExcel.java"))
+ ("/home/double/parallel_world/gopw/src/activity_engine.cpp" . 234)
+ ("/home/double/parallel_world/gopw/src/entity_behavior_engine.cpp" . 9195)
+ ("/home/double/parallel_world/gopw/src/entity_behavior_engine.h" . 710)
+ ("/home/double/parallel_world/server/client.cpp" . 1190)
+ ("/home/double/parallel_world/gopw/src/"
+  (dired-filename . "/home/double/parallel_world/gopw/src/test.cpp"))
+ ("/home/double/parallel_world/gopw/src/virtual_world_timer.h" . 393)
+ ("/home/double/parallel_world/gopw/src/variate_manager.h" . 232)
+ ("/home/double/.emacs.d/plugins/eim/"
+  (dired-filename . "/home/double/.emacs.d/plugins/eim/makefile"))
+ ("/home/double/parallel_world/gopw/src/virtual_world_timer.cpp" . 161)
+ ("/home/double/parallel_world/gopw/src/server_option_manager.cpp" . 6526)
+ ("/home/double/.emacs.d/url/cookies" . 2228)
+ ("/home/double/.emacs.d/plugins/lsj_function.el" . 7532)
+ ("/home/double/parallel_world/gopw/src/server_option_manager.h" . 730)
+ ("/home/double/parallel_world/gopw/src/singleton_base.h" . 537)
+ ("/home/double/.emacs.d/plugins/emacs-async/"
+  (dired-filename . "/home/double/.emacs.d/plugins/emacs-async/async-bytecomp.el"))
+ ("/home/double/parallel_world/gopw/src/variate_manager.cpp" . 22130)
+ ("/home/double/"
+  (dired-filename . "/home/double/.gnome"))
+ ("/home/double/.emacs.d/plugins/lookup-word-on-internet/xah-lookup.el" . 7952)
+ ("/usr/bin/emacs" . 63)
+ ("/home/double/.emacs" . 28)
+ ("/usr/share/emacs/24.5/lisp/url/url-vars.el.gz" . 5246)
+ ("/home/double/.emacs.d/elpa/w3-4.0.49/w3-autoloads.el" . 9173)
+ ("/home/double/parallel_world/data/config.json" . 383)
+ ("/home/double/parallel_world/lua/thirsty.lua" . 597)
+ ("/home/double/parallel_world/server/server.cpp" . 367)
+ ("/home/double/Documents/org/emacs.org" . 840)
+ ("/home/double/Documents/org/emacs.html" . 22753)
+ ("/home/double/parallel_world/gopw/src/zhelpers.h" . 1275)
+ ("/home/double/parallel_world/gopw/"
+  (dired-filename . "/home/double/parallel_world/gopw/src"))
+ ("/home/double/parallel_world/"
+  (dired-filename . "/home/double/parallel_world/parallel_world"))
+ ("/home/double/IdeaProjects/PoiReadExcel/src/PoiReadExcel.java" . 4135)
+ ("/home/double/Documents/org/linux.org" . 254)
+ ("/home/double/parallel_world/db/Makefile" . 411)
+ ("/home/double/Documents/org/linux.html" . 5916)
+ ("/home/double/.emacs.d/plugins/google-c-style.el" . 5470)
+ ("/usr/share/emacs/24.5/lisp/window.el.gz" . 298416)
+ ("/home/double/parallel_world/gjson/include/"
+  (dired-filename . "/home/double/parallel_world/gjson/include/gjson.h"))
+ ("/home/double/parallel_world/gjson/include/gjson.h" . 1395)
+ ("/home/double/log/" . 170)
+ ("/home/double/.emacs.d/elpa/use-package-2.3/use-package-autoloads.el" . 2898)
+ ("/home/double/.emacs.d/elpa/bind-key-2.3/bind-key-autoloads.el" . 2149)
+ ("/home/double/.emacs.d/elpa/diminish-0.45/diminish-autoloads.el" . 2246)
+ ("/usr/local/include/glog/"
+  (dired-filename . "/usr/local/include/glog/logging.h"))
+ ("/home/double/parallel_world/gopw/obj/" . 736)
+ ("/usr/share/emacs/24.5/lisp/loaddefs.el" . 775348)
+ ("/home/double/.emacs.d/snippets/ife" . 11)
+ ("/home/double/.emacs.d/plugins/yasnippet-snippets-master/org-mode/verse" . 94)
+ ("/home/double/.emacs.d/snippets/c++-mode/sql_e" . 51)
+ ("/home/double/.emacs.d/snippets/c++-mode/sql_q" . 342)
+ ("/home/double/.emacs.d/plugins/xah-comment.el" . 796)
+ ("/home/double/.emacs.d/plugins/diredful/diredful.el" . 2391)
+ ("/home/double/parallel_world/lua/Makefile" . 19)
+ ("/home/double/IdeaProjects/"
+  (dired-filename . "/home/double/IdeaProjects/PoiReadExcel"))
+ ("/home/double/dc/org/"
+  (dired-filename . "/home/double/dc/org/emacs.html~"))
+ ("/home/double/dc/org/emacs.org" . 7793)
+ ("/home/double/.emacs.d/snippets/c++-mode/thread_new" . 61)
+ ("/home/double/parallel_world/lua/hunger.lua" . 579)
+ ("/home/double/parallel_world/lua/"
+  (dired-filename . "/home/double/parallel_world/lua/test_lua.cpp"))
+ ("/home/double/parallel_world/db/src/CVirtualWorldDB.pc" . 12206)
+ ("/home/double/parallel_world/lua/tired.lua" . 574)
+ ("/home/double/parallel_world/gopw/src/main.cpp" . 1695)
+ ("/home/double/.emacs.d/plugins/flycheck/"
+  (dired-filename . "/home/double/.emacs.d/plugins/flycheck/flycheck.el"))
+ ("/home/double/.emacs.d/plugins/flycheck/flycheck.el" . 366451)
+ ("/usr/include/boost/lexical_cast.hpp" . 2218)
+ ("/home/double/parallel_world/gopw/src/main.h" . 24)
+ ("/home/double/.emacs.d/plugins/color-theme/"
+  (dired-filename . "/home/double/.emacs.d/plugins/color-theme/color-theme.el"))
+ ("/home/double/.emacs.d/plugins/color-theme/color-theme.el" . 42811)
+ ("/home/double/.emacs.d/elpa/flycheck-30/flycheck-autoloads.el" . 8381)
+ ("/home/double/.emacs.d/elpa/dash-2.13.0/dash-autoloads.el" . 221)
+ ("/home/double/.emacs.d/elpa/pkg-info-0.6/pkg-info-autoloads.el" . 3756)
+ ("/home/double/.emacs.d/elpa/epl-0.8/epl-autoloads.el" . 220)
+ ("/home/double/.emacs.d/elpa/let-alist-1.0.5/let-alist-autoloads.el" . 1267)
+ ("/home/double/.emacs.d/elpa/seq-2.19/seq-autoloads.el" . 265)
+ ("/usr/local/include/glog/logging.h" . 18645)
+ ("/home/double/.emacs.d/plugins/logview/logview.el" . 1439)
+ ("/home/double/.emacs.d/plugins/logview/"
+  (dired-filename . "/home/double/.emacs.d/plugins/logview/README.md"))
+ ("/home/double/.emacs.d/snippets/c++-mode/log_b" . 51)
+ ("/home/double/.emacs.d/snippets/c++-mode/log_e" . 51)
+ ("/home/double/.emacs.d/snippets/c++-mode/info" . 49)
+ ("/home/double/dc/org/emacs.html" . 22342)
+ ("/home/double/IdeaProjects/PoiReadExcel/src/DBBean.java" . 1710)
+ ("/home/double/IdeaProjects/PoiReadExcel/config" . 902)
+ ("/home/double/.emacs.d/" . 1046)
+ ("/home/double/parallel_world/lib/"
+  (dired-filename . "/home/double/parallel_world/lib/libgjson.so"))
+ ("/home/double/parallel_world/doc/"
+  (dired-filename . "/home/double/parallel_world/doc/pw.org"))
+ ("/home/double/.emacs.d/diredful-conf.el" . 432)
+ ("/home/double/.emacs.d/plugins/undo-tree.el" . 41512))

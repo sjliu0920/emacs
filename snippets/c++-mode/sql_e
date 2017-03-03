@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: sql_e
+# key: sql_e
+# --
+
+if(db.HandleSingleCmdData(cmd) != SUCCESS)
+{
+    db.HandleSingleCmdData("rollback");
+}
+else
+{
+    NPCLog(it->str[0], "$1", new_status);
+}
+
+db_ill.HandleSingleCmdData("commit");

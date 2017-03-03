@@ -1,0 +1,5 @@
+#name : using namespace ... 
+# key: ife
+# --
+using namespace2 ${std};
+$0

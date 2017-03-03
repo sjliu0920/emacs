@@ -1,0 +1,5 @@
+#name : using namespace ... 
+# key: double
+# --
+using lsj ${std};
+$0

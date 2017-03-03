@@ -1,0 +1,15 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("CVariableEngine.cpp"
+ (filename . "~/parallel_world/engine/src/CVariableEngine.cpp")
+ (front-context-string . "\n		beginInterval")
+ (rear-context-string . "begin_of_day)\n	{")
+ (position . 13367))
+(".emacs"
+ (filename . "~/.emacs")
+ (front-context-string . "\n(set-default-fo")
+ (rear-context-string . "-color \"black\")\n")
+ (position . 473))
+)

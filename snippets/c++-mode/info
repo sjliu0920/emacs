@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: info
+# key: info
+# --
+LOG(INFO) << $1 << endl;        

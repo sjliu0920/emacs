@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: log_e
+# key: log_e
+# --
+LOG(INFO) << CVirtualWorldTimer::instance()->get_world_datetime()
+<< " : " << __func__  << " be exited!" << std::endl;

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: thread_new
+# key: thread_new
+# --
+
+boost::thread thrd_$1(boost::bind(&CVariateManager::$2, this));
+thrd_$1.detach();
