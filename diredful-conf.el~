@@ -1,4 +1,4 @@
 
-("cpp" "h" "org" "out" "so" "lua" "obj")
+("sh" "cpp" "h" "org" "out" "so" "lua" "obj")
 
-(("cpp" (:foreground "burlywood") "cpp" nil nil nil nil) ("h" (:foreground "light goldenrod") "hp?p?" nil nil nil nil) ("org" (:foreground "chocolate2") "org" nil nil nil nil) ("out" (:foreground "green") "out" nil nil nil nil) ("so" (:foreground "green") "so" nil nil nil nil) ("lua" (:foreground "light slate blue") "lua" nil nil nil nil) ("obj" (:foreground "green") "o" nil nil nil nil))
+(("sh" (:foreground "green") "*.sh" nil nil nil nil) ("cpp" (:foreground "wheat") "cpp" nil nil nil nil) ("h" (:foreground "light goldenrod") "hp?p?" nil nil nil nil) ("org" (:foreground "chocolate2") "org" nil nil nil nil) ("out" (:foreground "green") "out" nil nil nil nil) ("so" (:foreground "green") "so" nil nil nil nil) ("lua" (:foreground "light slate blue") "lua" nil nil nil nil) ("obj" (:foreground "green") "o" nil nil nil nil))

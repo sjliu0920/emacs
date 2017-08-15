@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: pb_debug
+# key: pb_debug
+# --
+cout << "=============Begin PB Debug ==============" << endl;
+$1.PrintDebugString();
+cout << "=============End PB Debug ==============" << endl;

@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: add_src
+# key: add
+# --
+
+// $1
+$1::$1()
+{
+}
+
+Result $1::work()
+{
+    m_last_result = m_now_result;
+	m_now_result = result;
+
+    return result;
+}

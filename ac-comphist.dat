@@ -1,330 +1,1408 @@
-((("lsj_function" .
-   [0 0 0 1 0 0 0 0 0 0 0 1])
-  ("lsj" .
-   [7 0 0])
-  ("quip-mode-map" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("if" .
-   [1 0])
-  ("quip-mode3" .
-   [3 0 0 0 0 0 0 0 0 0])
-  ("call_fun" .
-   [1 0 0 0 0 0 0 0])
-  ("after_fun" .
-   [1 0 0 0 0 0 0 0 0])
-  ("(lua_State *L, int arg, size_t *l)" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("luaL_checklstring" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("ill" .
-   [2 0 0])
-  ("phy" .
-   [1 0 0])
-  ("index" .
-   [1 0 0 0 0])
-  ("id" .
-   [2 0])
-  ("function" .
-   [0 0 0 1 0 0 0 0])
-  ("ill_query_sql" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("querySql" .
-   [0 0 1 0 0 0 0 0])
-  ("mylib" .
-   [1 0 1 0 0])
-  ("arg2" .
-   [1 0 0 0])
-  ("arg1" .
-   [2 0 0 0])
-  ("n" .
-   [3])
-  ("do_query" .
+((("m_is_bb8" .
    [0 0 0 0 0 1 0 0])
-  ("add" .
-   [1 0 0])
-  ("(lua_State *L, const char *s)" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("lua_pushstring" .
-   [1 0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("print" .
-   [2 0 0 0 0])
-  ("lua" .
-   [1 0 0])
-  ("ido-switch-buffer" .
-   [0 0 0 0 0 0 2 0 0 0 1 0 0 0 0 0 0])
-  ("ido-read-buffer" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("a" .
-   [8])
-  ("display" .
-   [0 0 0 1 0 0 0])
-  ("otherwindow" .
-   [0 0 0 0 0 0 0 0 1 0 0])
-  ("help-menu" .
-   [0 0 0 0 0 0 0 1 0])
-  ("global-set-key" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("global" .
-   [0 0 0 1 0 0])
-  ("f" .
-   [1])
-  ("pw_time" .
-   [10 0 2 0 0 1 0])
-  ("b" .
-   [3])
-  ("inc" .
-   [1 0 0])
-  ("macrop" .
-   [1 0 0 0 0 0])
-  ("var" .
-   [3 0 0])
-  ("defmacro" .
-   [1 0 0 0 0 0 0 0])
-  ("defun" .
+  ("is_bb8" .
+   [2 0 0 1 0 1])
+  ("list" .
+   [1 0 0 0])
+  ("path2" .
    [1 0 0 0 0])
-  ("incr" .
-   [3 0 0 0])
-  ("+" .
-   [3])
-  ("x" .
-   [8])
-  ("setq" .
+  ("path1" .
+   [1 0 0 0 0])
+  ("comm" .
+   [1 0 0 0])
+  ("path" .
    [2 0 0 0])
-  ("point" .
-   [1 0 0 0 0])
-  ("o" .
-   [1])
-  ("1." .
-   [1 0])
-  ("in" .
-   [4 0])
-  ("(const string &npc_id, const string &info1, const string &info2)" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("NPCLog" .
-   [0 0 0 0 1 0])
-  ("CVariateManager" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("new_status" .
-   [4 0 0 0 0 2 0 0 0 0])
-  ("status" .
-   [1 0 0 0 0 0])
-  ("const" .
-   [1 0 0 0 0])
-  ("form" .
-   [0 0 0 1])
-  ("ifdef" .
-   [0 0 1 0 0])
-  ("for" .
-   [3 0 0])
-  ("easymenu" .
-   [1 0 0 0 0 0 0 0])
-  ("require" .
-   [0 0 0 0 1 0 1])
-  ("kbd" .
-   [11 0 0])
-  ("color-theme-gray30" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
-  ("color-theme-snow" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
-  ("color-theme-marquardt" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1])
-  ("color-theme-marine" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0])
-  ("color-theme-counter" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("color-theme-classic" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0])
-  ("color-theme-gray1" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("color-theme-dark-erc" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0])
-  ("color-theme" .
-   [0 0 0 0 1 0 0 0 0 0 1])
-  ("j" .
-   [1])
-  ("d" .
-   [5])
-  ("k" .
-   [2])
-  ("requires" .
-   [0 0 1 0 0 0 0 0])
-  ("return" .
-   [0 0 0 0 0 5])
-  ("size" .
-   [1 0 0 0])
-  ("m_config_file" .
-   [5 0 0 0 0 1 0 0 1 0 0 0 0])
-  ("include" .
-   [0 0 0 0 2 0 0])
-  ("max" .
-   [0 0 2])
-  ("reinterpret_cast" .
-   [0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("float" .
-   [0 0 1 0 1])
-  ("rand_probability" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("range_error" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("CVirtualWorldDB" .
-   [3 0 2 0 0 0 0 0 1 0 0 0 0 0 0])
-  ("m_sql_context" .
-   [1 0 0 0 0 0 0 0 0 1 0 0 2])
-  ("google" .
-   [1 0 0 1 0 0])
-  ("c_json" .
-   [6 0 0 1 2 0])
-  ("n_object_index" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("GJson" .
-   [0 0 2 0 0])
-  ("strstr" .
-   [5 0 0 0 0 1])
-  ("(const char *__haystack, const char *__needle)" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3])
-  ("str" .
-   [11 0 1])
-  ("struct" .
+  ("symbol" .
    [0 0 0 1 0 0])
-  ("strsignal" .
-   [0 0 0 0 0 0 1 0 1])
-  ("(int __sig)" .
-   [0 0 0 0 0 0 0 0 0 0 1])
-  ("strtod" .
-   [0 0 0 1 0 0])
-  ("(const char *__restrict __nptr, char **__restrict __endptr)" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("string" .
-   [11 0 0 0 0 0])
-  ("replace" .
-   [1 0 0 0 0 0 0])
-  ("n_object_max" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("sr-speedbar" .
-   [0 0 0 1 0 0 0 0 0 0 0])
-  ("sr-speedbar-right-side" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("t" .
-   [4])
-  ("nil" .
-   [8 0 0])
-  ("db_muscle" .
-   [4 0 1 2 0 1 1 1 0])
-  ("vector" .
-   [1 0 0 0 0 0])
-  ("TB_search" .
-   [0 0 0 0 1 0 0 0 0])
-  ("iterator" .
-   [0 0 0 0 1 0 0 0])
-  ("it" .
-   [12 0])
-  ("search" .
-   [0 0 1 1 0 0])
-  ("begin" .
-   [0 0 1 0 0])
-  ("()" .
-   [0 3])
-  ("end" .
-   [0 0 1])
-  ("atof" .
-   [1 0 0 0])
-  ("(const _Tp &__a, const _Tp &__b" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("muscle" .
-   [1 0 1 0 0 0])
-  ("physique" .
-   [0 0 1 3 0 0 0 0])
-  ("tmp" .
-   [4 0 0])
-  ("cmd" .
-   [9 0 0])
-  ("c_str" .
-   [5 0 0 0 0])
-  ("stringstream" .
-   [0 0 0 0 0 0 0 1 0 0 0 0])
-  ("ss" .
-   [2 0])
-  ("strPhy" .
-   [0 0 0 0 2 0])
-  ("using" .
-   [0 0 0 0 1])
-  ("namespace" .
-   [0 0 1 0 0 0 0 0 0])
-  ("std" .
-   [1 0 0])
-  ("basic_ios" .
-   [0 0 0 0 0 1 0 0 0])
-  ("basic_skin" .
-   [3 0 0 1 1 0 0 0 0 2])
-  ("talent_skin" .
-   [0 0 0 1 0 0 0 0 0 0 0])
-  ("strSkin" .
-   [1 0 0 0 0 0 0])
-  ("CElectionActivity" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("add-to-list" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("load-path" .
+  ("symbol-value" .
+   [4 0 0 0 0 0 0 0 0 0 0 0])
+  ("-path-src" .
    [1 0 0 0 0 0 0 0 0])
-  ("not" .
+  ("-path-inc" .
+   [1 0 0 0 0 0 0 0 0])
+  ("buffer-name" .
+   [2 0 0 0 0 0 0 0 0 0 0])
+  ("get-proj-path" .
+   [3 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("file-name-sans-extension" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("concat" .
+   [1 0 0 0 0 0])
+  ("-path" .
+   [3 0 0 0 0])
+  ("loc" .
    [1 0 0])
-  ("last-command" .
+  ("loc_and_string" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("LOC_WG" .
+   [2 0 0 0 0 0])
+  ("LOC_EMERGENCY" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("LOC_ROBOT" .
+   [1 0 0 0 0 0 0 0 0])
+  ("LOC_SPACE" .
+   [0 0 0 0 0 0 1 0 0])
+  ("LOC_TIMER" .
+   [0 0 0 0 0 0 0 1 0])
+  ("LOC_SWITCH" .
+   [0 0 0 0 0 0 0 1 0 0])
+  ("str_cmd" .
+   [2 0 0 0 0 0 0])
+  ("LOC_WEATHER" .
+   [1 0 0 0 0 0 1 0 0 0 0])
+  ("cmd_and_string" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("regexp" .
+   [1 0 0 0 0 0])
+  ("REG_R9" .
+   [0 0 0 1 0 0])
+  ("query" .
+   [1 0 0 0 0])
+  ("PW_Notify_Emergency" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("m_kickofffeather" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("IsKickOffFeather" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("IsTakingSeed" .
+   [0 0 0 1 0 0 0 0 0 0 0 0])
+  ("m_takingseed" .
+   [0 0 0 0 0 2 0 0 0 0 0 0])
+  ("req" .
+   [1 0 0])
+  ("EventType" .
+   [1 0 0 0 0 0 0 0 0])
+  ("(bool value)" .
+   [0 0 0 0 0 0 0 0 0 0 0 1])
+  ("set_leave_feather" .
+   [1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("mutable_bird_leave" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("BirdLeave" .
+   [0 0 0 0 0 1 0 0 0])
+  ("BIRD_LEAVE" .
+   [0 0 0 1 0 0 0 1 0 0])
+  ("set_taking_seed" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("set_takingseed" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("visit" .
+   [1 0 0 0 0])
+  ("mutable_bird_visit" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("BirdVisit" .
+   [0 0 0 0 0 0 0 1 1])
+  ("mutable_bird_voice" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("BirdVoice" .
+   [1 0 0 0 1 0 0 0 0])
+  ("mutable_door_beel" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("Unknown" .
+   [1 0 0 0 0 0 0])
+  ("BIRD_VISIT" .
+   [0 0 0 1 0 0 0 1 0 0])
+  ("BIRD_VOICE" .
+   [1 0 0 0 0 0 0 0 0 1])
+  ("DOOR_BEEL_RING" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 1])
+  ("set_type" .
+   [0 0 0 0 0 0 1 0])
+  ("mutable_data" .
+   [0 0 0 0 0 0 0 0 0 0 1 0])
+  ("pw_event" .
+   [0 0 0 0 0 0 1 1])
+  ("data" .
+   [5 0 0 0])
+  ("EventData" .
+   [0 0 0 0 0 0 0 0 1])
+  ("CPWMsgEmergencyEvent" .
+   [1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("EmergencyEvent" .
+   [0 0 4 1 0 0 0 0 0 0 0 0 0 0])
+  ("Pw" .
+   [13 0])
+  ("msg_temp" .
+   [0 0 0 0 1 0 0 0])
+  ("msg_temp_src" .
    [0 0 0 0 0 0 0 1 0 0 0 0])
-  ("get" .
+  ("msg_src" .
+   [0 0 0 0 0 0 1])
+  ("MSG_HEAD_TEMPLATE" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1])
+  ("m_map_id" .
+   [1 0 0 0 1 0 0 0])
+  ("link" .
+   [3 0 0 0])
+  ("m_link_vec" .
+   [0 0 0 0 1 0 0 0 0 0])
+  ("add_link" .
+   [0 0 0 0 0 1 0 0])
+  ("CMsgDistributor" .
+   [0 0 0 0 0 0 0 2 0 0 0 0 0 0 0])
+  ("LINK" .
+   [3 0 0 0])
+  ("S" .
+   [1])
+  ("src" .
+   [9 0 0])
+  ("Write" .
+   [1 0 0 0 0])
+  ("m_fd" .
+   [1 0 0 0])
+  ("(CMsg *msg)" .
+   [0 0 0 0 0 0 0 0 0 0 1])
+  ("add_2_queue" .
+   [0 0 0 0 0 0 1 0 0 0 0])
+  ("AddPBMsgBody" .
+   [0 0 0 0 0 0 0 0 0 0 0 1])
+  ("pw_msg" .
+   [4 0 0 0 0 0])
+  ("NotifyRobotAttrChanged" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("CMsgRobotInfo1" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("target" .
+   [9 0 0 0 0 0])
+  ("CMsgRobotInfo" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("get_msg" .
+   [3 0 0 0 0 0 0])
+  ("set_pk_len" .
+   [0 0 0 0 0 0 1 0 0 0])
+  ("m_Msg" .
+   [1 0 0 0 0])
+  ("l_format" .
+   [6 0 0 0 0 0 0 0])
+  ("m_pb_info" .
+   [2 0 0 0 1 0 0 0 0])
+  ("CPWMsg" .
+   [2 0 0 5 2 2])
+  ("m_format" .
+   [3 0 0 0 1 1 0 0])
+  ("ATTR_TYPE" .
+   [1 0 0 0 0 0 0 1 0])
+  ("init_self_attr" .
+   [1 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("setFeel" .
+   [1 0 0 0 0 0 0])
+  ("set" .
+   [3 0 0])
+  ("__func__" .
+   [1 0 0 0 0 0 1 0])
+  ("init_feel" .
+   [1 0 0 0 0 0 0 0 0])
+  ("real_object" .
+   [0 0 0 0 0 0 1 1 0 0 0])
+  ("init" .
+   [3 0 0 0])
+  ("degree" .
+   [2 0 0 0 0 0])
+  ("desc" .
+   [4 0 0 0])
+  ("lua_State" .
+   [2 0 0 0 0 0 0 0 0])
+  ("ATTR_COLOR" .
+   [0 0 0 0 0 0 0 1 0 0])
+  ("sunshine" .
+   [1 0 0 0 0 0 0 0])
+  ("LuaGameObject" .
+   [1 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("get_sunshine" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("param" .
+   [6 0 0 0 0])
+  ("feel" .
+   [7 0 0 0])
+  ("phen" .
+   [8 0 0 0])
+  ("weather_name" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("cjson" .
+   [0 0 0 0 1])
+  ("../../src/linux-headers-4.4.0-64/" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("../../src/" .
+   [0 0 0 0 0 0 0 1 0 0])
+  ("../../dev/" .
+   [0 0 0 0 0 0 1 0 0 0])
+  ("fd" .
+   [32 0])
+  ("gs_conn_fd" .
+   [0 0 0 1 0 0 0 0 0 2])
+  ("ret" .
+   [7 0 0])
+  ("flag" .
+   [9 0 0 0])
+  ("INFO" .
+   [1 0 0 0])
+  ("LOG" .
+   [3 0 0])
+  ("GetPBMsg" .
+   [0 0 0 0 0 0 0 1])
+  ("CMsgChangeRobotAttr" .
+   [0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("TimeInfo" .
+   [2 0 0 0 0 0 0 0])
+  ("GS2PW_TimeInfo" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("GS2PW_TimeInfoReq" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("lsj-filter-lines" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("lsj-filter-src" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("lsj-filter-thread" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("-path-pw-server" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("-path-pw-src" .
+   [0 0 0 1 0 0 0 0 0 0 0 0])
+  ("-path-pw-db" .
+   [0 0 0 1 0 0 0 0 0 0 0])
+  ("g" .
+   [1])
+  ("get-unit" .
+   [3 0 0 1 1 0 0 0])
+  ("match-string" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("re-search-forward" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("-unit" .
+   [1 0 0 0 0])
+  ("beginning-of-line" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("-file-num" .
+   [1 0 0 0 0 0 0 0 0])
+  ("filter-lines" .
+   [0 0 0 0 0 0 3 0 0 0 0 0])
+  ("prefix-arg" .
+   [0 0 0 0 0 1 0 0 0 0])
+  ("current" .
+   [0 0 0 0 1 0 0])
+  ("message" .
+   [5 0 0 0 0 0 0])
+  ("current-prefix-arg" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("equal" .
+   [4 0 0 0 0])
+  ("cond" .
+   [3 0 0 0])
+  ("&optional" .
+   [1 0 0 0 0 2 0 1 0])
+  ("interactive" .
+   [3 0 0 0 0 0 0 1 0 0 0])
+  ("hl-line-unhighlight" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("hl-line" .
+   [0 0 0 1 0 0 0])
+  ("-reg" .
+   [9 0 0 0])
+  ("-" .
+   [1])
+  ("let" .
+   [4 0 0])
+  ("g_robot_vec" .
+   [0 0 0 0 4 0 0 0 0 0 0])
+  ("RobotInfo" .
+   [1 0 0 0 0 0 0 1 4])
+  ("Robot" .
+   [0 0 3 1 0])
+  ("NetProto" .
+   [3 0 0 3 27 4 12 0])
+  ("LuaGameResult" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("gen_thirsty" .
+   [0 0 0 0 1 0 1 1 0 0 0])
+  ("lua_setglobal" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("(lua_State *L, void *p)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("lua_pushlightuserdata" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("result" .
+   [7 0 1 2 0 0])
+  ("(int x)" .
+   [0 0 0 0 0 0 1])
+  ("GameResult" .
+   [1 0 0 0 1 0 0 0 0 0])
+  ("LuaGameEvent" .
+   [0 0 0 0 0 0 0 0 1 0 0 0])
+  ("c" .
+   [8])
+  ("(int balance)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("setAttr" .
+   [1 0 0 0 2 0 0])
+  ("real_result" .
+   [1 0 0 0 1 0 0 0 0 0 0])
+  ("eww" .
+   [2 0 0])
+  ("dd" .
+   [6 0])
+  ("=" .
+   [3])
+  ("SetLogFilenameExtension" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("(LogSeverity min_severity)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("SetStderrLogging" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("logview" .
+   [1 0 0 0 0 0 0])
+  ("quip-mode-map4" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("defvar" .
+   [0 0 0 0 0 1])
+  ("quip-mode" .
+   [3 0 0 0 0 0 0 0 0])
+  ("(lua_State *L, int idx, int *isnum)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("lua_tointegerx" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("L" .
+   [9])
+  ("(lua_State *L, const char *name)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("lua_getglobal" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("h" .
+   [3])
+  ("world" .
+   [1 0 0 0 0])
+  ("hello" .
+   [1 0 0 0 0])
+  ("e" .
+   [1])
+  ("zot" .
    [1 0 0])
-  ("i" .
-   [5])
-  ("ddd" .
-   [5 0 0])
-  ("bbb" .
-   [1 0 0])
-  ("foo" .
+  ("quux" .
+   [1 0 0 0])
+  ("|" .
+   [1])
+  ("baz" .
    [1 0 0])
   ("bar" .
    [1 0 0])
-  ("baz" .
+  ("foo" .
    [1 0 0])
-  ("|" .
-   [1])
-  ("quux" .
-   [1 0 0 0])
-  ("zot" .
+  ("bbb" .
    [1 0 0])
-  ("e" .
-   [1])
-  ("hello" .
-   [1 0 0 0 0])
-  ("world" .
-   [1 0 0 0 0])
-  ("h" .
-   [2])
-  ("lua_getglobal" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0])
-  ("(lua_State *L, const char *name)" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("L" .
-   [5])
-  ("lua_tointegerx" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("(lua_State *L, int idx, int *isnum)" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("quip-mode" .
-   [3 0 0 0 0 0 0 0 0])
-  ("defvar" .
-   [0 0 0 0 0 1])
-  ("quip-mode-map4" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("logview" .
+  ("ddd" .
+   [5 0 0])
+  ("i" .
+   [49])
+  ("get" .
+   [2 0 0])
+  ("last-command" .
+   [0 0 0 0 0 0 0 1 0 0 0 0])
+  ("not" .
+   [1 0 0])
+  ("load-path" .
+   [1 0 0 0 0 0 0 0 0])
+  ("add-to-list" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("CElectionActivity" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("strSkin" .
    [1 0 0 0 0 0 0])
-  ("SetStderrLogging" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("(LogSeverity min_severity)" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("SetLogFilenameExtension" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("=" .
-   [1])
-  ("dd" .
+  ("talent_skin" .
+   [0 0 0 1 0 0 0 0 0 0 0])
+  ("basic_skin" .
+   [3 0 0 1 1 0 0 0 0 2])
+  ("basic_ios" .
+   [0 0 0 0 0 1 0 0 0])
+  ("std" .
+   [2 0 0])
+  ("namespace" .
+   [0 0 1 0 0 0 0 0 0])
+  ("using" .
+   [0 0 0 0 1])
+  ("strPhy" .
+   [0 0 0 0 2 0])
+  ("ss" .
+   [2 0])
+  ("stringstream" .
+   [0 0 0 0 0 0 0 1 0 0 0 0])
+  ("c_str" .
+   [7 0 0 0 0])
+  ("cmd" .
+   [15 0 0])
+  ("tmp" .
+   [9 0 0])
+  ("physique" .
+   [0 0 1 3 0 0 0 0])
+  ("muscle" .
+   [1 0 1 0 0 0])
+  ("(const _Tp &__a, const _Tp &__b" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("atof" .
+   [1 0 0 0])
+  ("end" .
+   [5 0 1])
+  ("()" .
+   [0 22])
+  ("begin" .
+   [2 0 1 0 1])
+  ("search" .
+   [0 0 1 1 0 0])
+  ("it" .
+   [19 0])
+  ("iterator" .
+   [2 0 0 0 1 0 0 0])
+  ("TB_search" .
+   [0 0 0 0 1 0 0 0 0])
+  ("vector" .
+   [9 0 0 0 0 0])
+  ("db_muscle" .
+   [4 0 1 2 0 1 1 1 0])
+  ("nil" .
+   [9 0 0])
+  ("t" .
+   [5])
+  ("sr-speedbar-right-side" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("sr-speedbar" .
+   [0 0 0 1 0 0 0 0 0 0 0])
+  ("n_object_max" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("replace" .
+   [1 0 0 0 0 0 1])
+  ("string" .
+   [47 0 0 0 0 0])
+  ("(const char *__restrict __nptr, char **__restrict __endptr)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("strtod" .
+   [0 0 0 1 0 0])
+  ("(int __sig)" .
+   [0 0 0 0 0 0 0 0 0 0 1])
+  ("strsignal" .
+   [0 0 0 0 0 0 1 0 1])
+  ("struct" .
+   [0 0 0 1 1 0])
+  ("str" .
+   [16 0 1])
+  ("(const char *__haystack, const char *__needle)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3])
+  ("strstr" .
+   [5 0 0 0 0 1])
+  ("GJson" .
+   [0 0 2 0 0])
+  ("n_object_index" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("c_json" .
+   [6 0 0 1 2 0])
+  ("google" .
+   [1 0 0 1 0 0])
+  ("m_sql_context" .
+   [1 0 0 0 0 0 0 0 0 1 0 0 2])
+  ("CVirtualWorldDB" .
+   [4 0 3 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("range_error" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("rand_probability" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("float" .
+   [0 0 1 0 1])
+  ("reinterpret_cast" .
+   [0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("max" .
+   [0 0 2])
+  ("include" .
+   [0 0 0 1 6 0 1])
+  ("m_config_file" .
+   [5 0 0 0 0 1 0 0 1 0 0 0 0])
+  ("size" .
+   [4 0 2 0])
+  ("return" .
+   [0 0 0 0 2 6])
+  ("requires" .
+   [0 0 1 0 0 0 0 0])
+  ("k" .
+   [3])
+  ("d" .
+   [11])
+  ("j" .
+   [2])
+  ("color-theme" .
+   [0 0 0 0 1 0 1 0 0 0 1])
+  ("color-theme-dark-erc" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 1 0 0])
+  ("color-theme-gray1" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("color-theme-classic" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("color-theme-counter" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("color-theme-marine" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0])
+  ("color-theme-marquardt" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1])
+  ("color-theme-snow" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0])
+  ("color-theme-gray30" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1])
+  ("kbd" .
+   [12 0 0])
+  ("require" .
+   [0 0 0 0 1 0 1])
+  ("easymenu" .
+   [1 0 0 0 0 0 0 0])
+  ("for" .
+   [3 0 0])
+  ("ifdef" .
+   [0 0 1 0 0])
+  ("form" .
+   [0 0 0 1])
+  ("const" .
+   [3 0 0 0 0])
+  ("status" .
+   [28 0 0 0 0 0])
+  ("new_status" .
+   [4 0 0 0 0 2 0 0 0 0])
+  ("CVariateManager" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("NPCLog" .
+   [0 0 0 0 1 0])
+  ("(const string &npc_id, const string &info1, const string &info2)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("in" .
+   [67 0])
+  ("1." .
    [1 0])
-  ("eww" .
-   [2 0 0])))
+  ("o" .
+   [1])
+  ("point" .
+   [1 0 0 0 0])
+  ("setq" .
+   [8 0 0 0])
+  ("x" .
+   [10])
+  ("+" .
+   [4])
+  ("incr" .
+   [3 0 0 0])
+  ("defun" .
+   [6 0 0 0 0])
+  ("defmacro" .
+   [1 0 0 0 0 0 0 0])
+  ("var" .
+   [3 0 0])
+  ("macrop" .
+   [1 0 0 0 0 0])
+  ("inc" .
+   [1 0 0])
+  ("b" .
+   [22])
+  ("pw_time" .
+   [10 0 2 0 0 1 0])
+  ("f" .
+   [5])
+  ("global" .
+   [0 0 0 1 0 0])
+  ("global-set-key" .
+   [1 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("help-menu" .
+   [0 0 0 0 0 0 0 1 0])
+  ("otherwindow" .
+   [0 0 0 0 0 0 0 0 1 0 0])
+  ("display" .
+   [0 0 0 1 0 0 0])
+  ("a" .
+   [17])
+  ("ido-read-buffer" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("ido-switch-buffer" .
+   [0 0 0 0 0 0 2 0 0 0 1 0 0 0 0 0 0])
+  ("lua" .
+   [1 0 0])
+  ("print" .
+   [2 0 0 0 0])
+  ("lua_pushstring" .
+   [1 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("(lua_State *L, const char *s)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("add" .
+   [1 0 0])
+  ("do_query" .
+   [0 0 0 0 0 1 0 0])
+  ("n" .
+   [8])
+  ("arg1" .
+   [2 0 0 0])
+  ("arg2" .
+   [1 0 0 0])
+  ("mylib" .
+   [1 0 1 0 0])
+  ("querySql" .
+   [0 0 1 0 0 0 0 0])
+  ("ill_query_sql" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("function" .
+   [0 0 0 1 1 0 0 0])
+  ("id" .
+   [5 0])
+  ("index" .
+   [7 0 0 0 0])
+  ("phy" .
+   [1 0 0])
+  ("ill" .
+   [2 0 0])
+  ("luaL_checklstring" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("(lua_State *L, int arg, size_t *l)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("after_fun" .
+   [1 0 0 0 0 0 0 0 0])
+  ("call_fun" .
+   [1 0 0 0 0 0 0 0])
+  ("quip-mode3" .
+   [3 0 0 0 0 0 0 0 0 0])
+  ("if" .
+   [2 0])
+  ("quip-mode-map" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("lsj" .
+   [7 0 0])
+  ("lsj_function" .
+   [0 0 0 1 0 0 0 0 0 0 0 1])
+  ("ifndef" .
+   [0 0 0 0 1 0])
+  ("COMMON_H_H" .
+   [0 0 0 1 0 0 0 0 0 0])
+  ("g_map" .
+   [0 0 1 0 0])
+  ("NULL" .
+   [10 0 0 0])
+  ("init_db" .
+   [1 0 0 0 0 1 0])
+  ("g_db" .
+   [2 1 1 1])
+  ("printf" .
+   [1 0 0 0 0 0])
+  ("do_filter2" .
+   [0 0 0 0 0 1 0 0 0 0])
+  ("(const char *info)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("do_filter1" .
+   [0 0 0 0 0 0 0 0 0 1])
+  ("temp" .
+   [1 0 0 0])
+  ("update_npc" .
+   [0 0 0 0 0 0 0 2 0 0])
+  ("CNPC" .
+   [2 0 0 0])
+  ("npc" .
+   [7 0 0])
+  ("sql_e" .
+   [1 0 0 0 0])
+  ("sprintf" .
+   [1 0 0 0 0 0 0])
+  ("sql_update_mts_basic_properties_thirsty" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("m_MTS_Energy" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("m_MTS_Hunger" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("m_MTS_Thirsty" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("m_ID" .
+   [2 0 0 0])
+  ("getAttr" .
+   [3 0 1 2 0 0 0])
+  ("(const char *attr)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("strcmp" .
+   [1 0 0 0 0 0])
+  ("attr" .
+   [10 0 0 0])
+  ("update" .
+   [0 0 0 0 1 0])
+  ("sql_update_mts_basic_properties" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("pthread_mutex_t" .
+   [0 0 0 0 0 0 0 0 0 0 2 0 0 1 0])
+  ("PTHREAD_MUTEX_INITIALIZER" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("pthread" .
+   [0 0 0 0 0 0 2])
+  ("pthread_mutex_lock" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0])
+  ("(pthread_mutex_t *__mutex)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2])
+  ("robot_vec_mutex" .
+   [0 0 0 0 1 0 0 0 0 1 0 0 0 0 0])
+  ("arg" .
+   [11 0 0])
+  ("new_attr" .
+   [1 0 0 0 0 0 0 0])
+  ("PW_2_MTS" .
+   [0 0 0 1 0 0 0 0])
+  ("T2PW_Timer_Thirsty" .
+   [0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("msg" .
+   [13 0 0])
+  ("../ProtoFiles/" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 2])
+  ("../ProtoFiles/src/" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0])
+  ("timer_script" .
+   [0 0 0 0 0 1 0 0 0 0 0 0])
+  ("../ProtoFiles/src/thirsty.pb.h" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("gen" .
+   [1 0 0])
+  ("CreatePBMsg" .
+   [0 0 0 0 1 0 1 0 0 0 0])
+  ("(int command, void *msg)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2])
+  ("PW2GS_Notify_Robot_Change_Attr" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("robot" .
+   [21 0 0 0 0])
+  ("pBuf" .
+   [1 0 0 0])
+  ("TODO" .
+   [1 0 0 0])
+  ("kill-buffer" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("lsj-close-log-filter" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("Answer" .
+   [1 0 0 0 0 0])
+  ("Detail" .
+   [1 0 0 0 0 0])
+  ("Rsp" .
+   [1 0 0])
+  ("obj" .
+   [13 0 0])
+  ("mutable_pos_rot" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 1])
+  ("pos" .
+   [7 0 0])
+  ("mutable_rotation" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("mutable" .
+   [0 0 0 3 1 0 0])
+  ("mutable_position" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("q" .
+   [3])
+  ("set_z" .
+   [3 0 0 1 1])
+  ("(float value)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("set_x" .
+   [3 0 0 0 0])
+  ("set_y" .
+   [1 0 0 0 0])
+  ("v" .
+   [7])
+  ("ObjPosRelation" .
+   [0 0 0 0 2 0 0 0 0 0 0 0 0 1])
+  ("relation" .
+   [7 0 0 0 2 0 0 0])
+  ("add_obj_pos_relation" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("set_uuid" .
+   [0 0 0 0 1 0 0 0])
+  ("write" .
+   [1 0 0 0 0])
+  ("color-theme-gnome" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("color-theme-arjen" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("color-theme-aalto-dark" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0])
+  ("color-theme-andreas" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0])
+  ("color-theme-xp" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("color-theme-word-perfect" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("color-theme-taylor" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("color-theme-shaman" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("color-theme-resolve" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("color-theme-matrix" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0])
+  ("color-theme-lethe" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("color-theme-deep-blue" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("color-theme-spec-compat" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("color-theme-billw" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("color-theme-charcoal-black" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("color-theme-clarity" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0])
+  ("color-theme-euphoria" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("color-theme-high-contrast" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("color-theme-katester" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("pMsg" .
+   [6 0 0 0])
+  ("Msg" .
+   [4 0 0])
+  ("operator=" .
+   [2 0 0 0 0 0 0 0 0])
+  ("color-theme-midnight" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("init_log" .
+   [0 0 0 1 0 0 0 0])
+  ("color-theme-ld-dark" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("color-theme-jsc-dark" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("s" .
+   [7])
+  ("class" .
+   [1 0 0 1 0])
+  ("public" .
+   [4 0 0 3 0 1])
+  ("CMsg" .
+   [15 0 2 1])
+  ("CMsgNaturalStatusData" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("CMsgTimerThirsty" .
+   [0 0 2 0 1 0 0 0 0 0 0 0 0 1 0 0])
+  ("===============" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ty" .
+   [3 0])
+  ("afaik" .
+   [0 0 1 1 0])
+  ("atm" .
+   [0 0 2])
+  ("git-add-upstream" .
+   [1 0 0 0 0 0 0 3 1 0 0 0 0 0 1 3])
+  ("gitaddupstream" .
+   [0 0 0 2 0 0 4 0 1 0 0 0 0 0])
+  ("git-rebase-mode" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("git-addupstream" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("git_add_upstream" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("ks" .
+   [1 0])
+  ("s9" .
+   [1 0])
+  ("server" .
+   [2 0 0 0 0 0])
+  ("server-log" .
+   [0 0 0 0 0 0 0 1 0 0])
+  ("server9" .
+   [1 0 0 0 0 0 0])
+  ("p-w" .
+   [1 0 0])
+  ("pw" .
+   [2 0])
+  ("p" .
+   [2])
+  ("w" .
+   [2])
+  ("setenv" .
+   [3 0 0 0 0 0])
+  ("getenv" .
+   [1 0 0 0 0 0])
+  ("LD_LIBRARY_PATH" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("." .
+   [14])
+  ("uuid" .
+   [6 0 1 0])
+  ("class_id" .
+   [7 0 0 0 0 0 0 0])
+  ("item_id" .
+   [8 0 0 0 0 0 0])
+  ("touch" .
+   [1 0 0 0 0])
+  ("m_json" .
+   [2 0 0 0 0 0])
+  ("feel_case" .
+   [3 0 0 0 0 0 0 0 0])
+  ("get_feel" .
+   [1 0 0 0 0 0 0 0])
+  ("m_uuid" .
+   [2 0 0 0 0 0])
+  ("dimen" .
+   [1 0 0 0 0])
+  ("case_flag" .
+   [1 0 0 0 0 0 0 0 0])
+  ("out" .
+   [1 0 0])
+  ("event_script_dir" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("time_script_dir" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("program_dir" .
+   [0 0 0 0 0 1 0 0 0 0 0])
+  ("event" .
+   [1 0 0 0 1])
+  ("timer" .
+   [3 0 0 0 0])
+  ("0.5" .
+   [5 0 0])
+  ("0.25" .
+   [2 0 0 0])
+  ("0.05" .
+   [2 0 0 0])
+  ("0.1" .
+   [2 0 0])
+  ("0.01" .
+   [1 0 0 0])
+  ("Type" .
+   [1 0 0 0])
+  ("m_load_uuid" .
+   [0 0 1 1 0 1 0 1 0 0 0])
+  ("obj_uuid" .
+   [17 0 0 0 0 0 1 1])
+  ("CObject" .
+   [9 0 4 2 0 1 0])
+  ("(const " .
+   [0 0 0 0 0 0 5])
+  ("get_object" .
+   [2 0 0 0 0 0 1 0 0 0])
+  ("OBJ_GIFT" .
+   [0 0 0 0 0 1 0 0])
+  ("rand" .
+   [1 0 0 1])
+  ("express" .
+   [0 0 0 0 1 0 0])
+  ("at" .
+   [7 0])
+  ("vec" .
+   [2 0 0])
+  ("class_item" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("push_back" .
+   [0 0 0 0 0 1 0 0 4])
+  ("(const value_type &__x)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("g_object_vec" .
+   [0 0 0 0 1 0 0 0 0 0 0 0])
+  ("len" .
+   [2 0 0])
+  ("rand_int" .
+   [1 0 0 0 0 0 0 0])
+  ("set_obj_uuid" .
+   [1 0 0 0 0 0 0 0 0 0 1 0])
+  ("set_item_id" .
+   [0 0 0 0 0 0 1 0 1 0 0])
+  ("resp" .
+   [4 0 0 0])
+  ("ExpressResp" .
+   [0 0 2 0 0 0 0 0 0 0 0])
+  ("info" .
+   [6 0 0 0])
+  ("get_class_id" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("send_express" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("CRobot" .
+   [5 0 0 1 0 0])
+  ("(NetProto::RobotInfo *info)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("get_robot" .
+   [0 0 0 0 0 0 1 0 0])
+  ("(const string &uuid)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2])
+  ("robot_uuid" .
+   [11 0 0 0 0 0 0 0 0 0])
+  ("push" .
+   [0 0 0 1])
+  ("unsigned" .
+   [0 0 0 0 0 0 3 1])
+  ("add_vision" .
+   [2 0 0 0 0 0 0 0 0 0])
+  ("add_relation" .
+   [0 0 0 0 0 0 0 0 1 0 0 0])
+  ("delete" .
+   [4 0 0 0 0 0])
+  ("add_obj_in_vision" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("(const string &obj_uuid)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2])
+  ("add_pos_in_vision" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("(unsigned int pos)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4])
+  ("enter_spot_id" .
+   [0 0 0 0 0 0 0 1 1 0 0 0 0])
+  ("(" .
+   [10])
+  ("add_relation_in_vision" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("enter_relation" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("delete_obj_in_vision" .
+   [1 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("iter" .
+   [18 0 0 0])
+  ("delete_pos_in_vision" .
+   [0 0 0 0 2 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("delete_relation_in_vision" .
+   [0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("leave_spot_id" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("leave_obj_uuid" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("leave_relation" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 1])
+  ("y" .
+   [2])
+  ("m" .
+   [18])
+  ("obj_index" .
+   [8 0 0 0 0 0 0 0 0])
+  ("spot_index" .
+   [1 0 0 0 0 0 0 2 0 2])
+  ("m_relation_in_vision" .
+   [0 0 0 0 5 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("erase" .
+   [1 0 0 0 1])
+  ("(iterator __" .
+   [0 0 0 0 0 0 0 0 0 0 0 1])
+  ("m_obj_in_vision" .
+   [0 0 0 0 0 0 0 0 2 0 0 0 0 0 1])
+  ("m_pos_relation" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("CS" .
+   [11 0])
+  ("C2SVision" .
+   [0 0 0 10 0 1 0 0 0])
+  ("ObjSpotRelatio" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("ObjSpotRelation" .
+   [2 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("int" .
+   [1 0 0])
+  ("main" .
+   [2 0 0 0])
+  ("ADO" .
+   [0 1 0])
+  ("A" .
+   [2])
+  ("B" .
+   [4])
+  ("voice" .
+   [3 0 0 0 0])
+  ("level" .
+   [2 0 0 0 0])
+  ("type" .
+   [14 0 1 0])
+  ("l" .
+   [3])
+  ("VOLUME_LEVEL" .
+   [0 0 0 1 0 0 0 0 0 0 0 0])
+  ("T" .
+   [12])
+  ("VOICE_TYPE" .
+   [2 0 0 0 1 0 0 0 0 0])
+  ("VOICE_STATUS" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("params" .
+   [1 0 0 0 0 0])
+  ("C2S" .
+   [1 0 0])
+  ("VolumeLevel" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("VoiceStatus" .
+   [0 0 0 1 0 0 0 0 0 0 0])
+  ("VoiceType" .
+   [0 0 1 0 0 0 0 0 0])
+  ("DoorBellRing" .
+   [1 0 0 1 1 0 0 0 1 0 0 0])
+  ("CFood" .
+   [1 0 0 0 1])
+  ("obj2" .
+   [1 0 0 0])
+  ("CColor" .
+   [1 0 1 1 1 0])
+  ("CAttr" .
+   [3 0 2 0 0])
+  ("CCup" .
+   [1 0 0 0])
+  ("add_attr" .
+   [5 0 0 0 0 0 0 0])
+  ("m_attr" .
+   [2 0 0 0 0 0])
+  ("pu" .
+   [1 0])
+  ("F" .
+   [1])
+  ("(Hidden)" .
+   [0 0 0 0 0 0 0 5])
+  ("CSmell" .
+   [0 0 0 1 1 0])
+  ("cout" .
+   [2 0 0 0])
+  ("endl" .
+   [4 0 0 0])
+  ("m_IsContainer" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("Spot" .
+   [6 0 1 1])
+  ("mother_uuid" .
+   [0 0 2 1 1 0 0 0 0 0 1])
+  ("Sit" .
+   [2 0 0])
+  ("NoSit" .
+   [1 0 0 1 0])
+  ("m_temperature" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("m_str_temperature" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2])
+  ("spot" .
+   [4 0 0 0])
+  ("do_visual" .
+   [0 0 0 1 2 0 1 0 0])
+  ("empty" .
+   [3 0 0 0 0])
+  ("m_pos_in_vision" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("add_obj_in_vision_enter" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("add_pos_in_vision_enter" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("add_relation_in_vision_enter" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("m_obj_in_vision_enter" .
+   [2 0 0 0 0 11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("m_pos_in_vision_enter" .
+   [1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("m_relation_in_vision_enter" .
+   [1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0])
+  ("get_uuid" .
+   [5 0 0 0 0 0 2 0])
+  ("empty_vision" .
+   [0 0 0 0 0 0 0 0 0 0 0 1])
+  ("do_visual_event" .
+   [0 0 0 0 0 0 0 0 0 0 2 0 1 0 0])
+  ("(int fd)" .
+   [0 0 0 0 0 0 0 3])
+  ("do_visual_event_obj" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("do_visual_event_relation" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("LIP" .
+   [1 0 0])
+  ("do_spot_relation_item" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("pos_relation" .
+   [0 0 0 0 0 0 1 0 0 0 0 0])
+  ("Inside" .
+   [1 0 1 1 0 0])
+  ("ON" .
+   [2 0])
+  ("On" .
+   [2 0])
+  ("do_visual_event_spot" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("lastobjsize" .
+   [0 0 0 1 0 0 0 0 0 0 0])
+  ("lastviewcontainedobjuuid" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("PosRelationType" .
+   [0 0 1 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("None" .
+   [2 0 0 1])
+  ("ref_uuid" .
+   [0 0 0 0 0 0 1 0])
+  ("r_relation" .
+   [0 0 0 0 0 0 1 0 0 0])
+  ("set_relation" .
+   [0 0 0 0 0 0 1 0 0 0 0 0])
+  ("(::google::protobuf::uint32 value)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("~MessageLite" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("lastviewcontainedobjuuid_size" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("find" .
+   [2 0 0 0])
+  ("no_sit" .
+   [1 0 0 0 0 0])
+  ("ActStatus" .
+   [0 0 0 0 1 0 0 0 0])
+  ("SITING_ON" .
+   [0 0 0 0 1 0 0 0 0])
+  ("msg_head" .
+   [1 0 0 0 1 2 1 0])
+  ("room_id" .
+   [0 0 1 0 0 0 0])
+  ("c_status" .
+   [0 0 0 0 0 0 0 1])
+  ("set_room_id" .
+   [0 0 0 0 0 0 2 0 0 0 0])
+  ("set_robot_id" .
+   [0 0 0 0 0 0 0 0 1 1 0 0])
+  ("robot_id" .
+   [2 0 0 0 0 0 0 0])
+  ("ActRelation" .
+   [0 0 0 0 0 2 0 0 0 0 0])
+  ("RELATION_ACTION" .
+   [0 0 0 0 2 0 0 0 0 0 0 0 0 0 0])
+  ("clear" .
+   [4 0 0 0 0])
+  ("get_map_id" .
+   [0 0 0 0 0 0 1 1 0 0])
+  ("(const string &robot_uuid)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2])
+  ("map_id" .
+   [2 0 0 0 0 0])
+  ("map" .
+   [2 0 0])
+  (":" .
+   [1])
+  ("->" .
+   [4 0])
+  ("command" .
+   [6 0 0 0 0 0 0])
+  ("pool" .
+   [5 0 0 0])
+  ("modify" .
+   [2 0 0 0 0 0])
+  ("receive" .
+   [1 0 0 0 0 0 0])
+  ("applescript-mode" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("eating" .
+   [2 0 0 0 0 0])
+  ("apple" .
+   [1 0 0 0 0])
+  ("take" .
+   [1 0 0 0])
+  ("exit" .
+   [1 0 0 0])
+  ("CLogin" .
+   [1 0 0 2 0 0])
+  ("NotifyClientUserExist" .
+   [1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("(int err, const string &error, int fd)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2])
+  ("virtual" .
+   [0 0 1 0 0 0 0])
+  ("MYSQL_RES" .
+   [0 0 0 0 1 1 0 0 0])
+  ("res" .
+   [4 0 0])
+  ("m_mysql" .
+   [0 0 0 1 1 0 0])
+  ("Query" .
+   [2 0 0 0 0])
+  ("affected" .
+   [1 0 0 0 0 0 0 0])
+  ("affected_rows" .
+   [1 0 0 0 1 0 0 0 0 0 0 1 0])
+  ("REG_ERROR" .
+   [2 0 0 0 0 0 0 0 0])
+  ("LOGIN_OK" .
+   [1 0 0 0 0 0 0 0])
+  ("REG_EXIST" .
+   [1 0 0 0 0 0 0 0 0])
+  ("LOGIN" .
+   [4 0 0 0 0])
+  ("Insert" .
+   [2 0 0 0 0 0])
+  ("Update" .
+   [2 0 0 0 0 0])
+  ("LOGIN_ERROR" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("NotifyClientRegisterResp" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("g_login" .
+   [2 0 0 0 1 0 0])
+  ("bool" .
+   [4 0 0 1])
+  ("err" .
+   [2 0 0])
+  ("success" .
+   [2 0 0 1 0 0 0])
+  ("create_login_resp_msg" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("private" .
+   [5 0 0 0 0 0 0])
+  ("player_id" .
+   [3 0 1 0 0 0 0 0 0])
+  ("scene" .
+   [1 0 0 0 0])
+  ("item" .
+   [2 0 0 0])
+  ("os" .
+   [2 0])
+  ("object" .
+   [1 0 0 0 0 0])
+  ("NotifyClientLoginFailed" .
+   [1 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("(const string &err, int fd)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2])
+  ("NotifyClientLoginSuccess" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("get_robot_info" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("COMMAND" .
+   [1 0 0 0 0 0 0])
+  ("PW_LINK" .
+   [1 0 0 0 0 0 0])
+  ("CHILD" .
+   [0 0 0 0 1])
+  ("SetMsgHeader" .
+   [0 0 0 0 1 0 0 0 0 0 0 0])
+  ("PW" .
+   [3 0])
+  ("MsgHead" .
+   [0 0 0 0 2 0 0])
+  ("head" .
+   [6 0 0 0])
+  ("m_weather_see" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("m_weather_2_robot_see" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("mutable_head" .
+   [0 0 0 0 0 0 0 0 0 0 0 2])
+  ("set_msg_src" .
+   [0 0 0 0 0 0 0 2 0 0 0])
+  ("(::NetProto::MsgSrc value)" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2])
+  ("m_visual_er" .
+   [0 0 0 0 0 1 0 0 0 0 0])
+  ("m_weather_2_robot_heard" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("m_weather_2_robot_feel" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("m_feel" .
+   [1 0 0 0 0 0])
+  ("get_weather_config" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("../ProtoFiles/src/record.pb.h" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("../msg/CPWMsgGetPWDataResp.h" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("../msg/CPWMsgRecordEvent.h" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("mutex" .
+   [1 0 0 0 1])
+  ("g_send_msg" .
+   [0 0 0 1 0 0 0 0 0 0])
+  ("PTHREAD_MUTEX_MSG_QUEUE" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("set_intellectual" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ERROR" .
+   [1 0 0 0 0])
+  ("RECORD" .
+   [0 0 0 0 0 1])
+  ("RECORD_UPDATE" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("g_switch_fd" .
+   [0 0 0 0 1 0 0 0 0 0 0])
+  ("door_obj_vec" .
+   [0 0 0 0 0 0 0 1 0 0 0 0])))

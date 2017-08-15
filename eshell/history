@@ -1,128 +1,128 @@
+make
+make
 cd ..
-cd ..
-ls
-make clean;
-make
-ls
-tree
-rm -rf log/*
-make
-proc
-locate proc
-│   ├── variable_engine_warning_20161219-143110.17791
-ls
-cd engine/
-ls
-cd src
-ls
-g++ test_thread.cpp 
-history | grep boost
-g++ test_thread.cpp -lboost_system -lboost_thread -I/usr/include/boost
-./a.out 
-g++ test_thread.cpp -lboost_system -lboost_thread -I/usr/include/boost
-g++ test_thread.cpp -lboost_system -lboost_thread -I/usr/include/boost
-./a.out 
-./a.out
-./a.out
-g++ test_thread.cpp -lboost_system -lboost_thread -I/usr/include/boost
-./a.out
-./a.out
-g++ test_thread.cpp -lboost_system -lboost_thread -I/usr/include/boost
-g++ test_thread.cpp -lboost_system -lboost_thread -I/usr/include/boost
-./a.out 
-./a.out 
-g++ test_thread.cpp -lboost_system -lboost_thread -I/usr/include/boost
-./a.out 
-g++ test_thread.cpp -lboost_system -lboost_thread -I/usr/include/boost
-g++ test_thread.cpp -lboost_system -lboost_thread -I/usr/include/boost
-g++ test_thread.cpp -lboost_system -lboost_thread -I/usr/include/boost
-g++ test_thread.cpp -lboost_system -lboost_thread -I/usr/include/boost
-g++ test_thread.cpp -lboost_system -lboost_thread -I/usr/include/boost
-./a.out 
-cd ..
-ls
-make
-make clean;
-make
-ls
-${lisp}
-cd /
-find . -name debian
-find . -name debian | grep menu
-sudo find . -name debian | grep menu
-sudo find . -name debian.menu
-sudo find . -name debian.menu
-sudo find . -name debian.menu
-find: ‘./run/user/1000/gvfs’: Permission denied
-ls
-cd
-ls
-cd server
-cd ..
-cd server
-ls
-ll
-ls
-ls
-g++ server.cpp
-man whereis 
-whereis zhelpers.h
-man locate
-g++ server.cpp
-g++ server.cpp -lzmq
-ls
-./a.out 
-ls
-ls
-g++ client.cpp -lzmq
-ls
-g++ server.cpp -lzmq -o server
-ls
-rm a.out
-g++ client.cpp -lzmq -o client
-ls
-g++ client.cpp -lzmq -o client
-ls
-g++ client.cpp -lzmq -o client
-ls
-make
-make clean;
-ls
-make
-ls
-ll
-ls -l
-ls
-cd ../../
-ls
-./build.sh 
-ls
-cd ../
-cd ..
-ls
-./build.sh 
-make[1]: Entering directory '/home/double/parallel_world/db'
-ls
-cd db
-ls
-make
-make clean
-make
-ls
-ll
-cd 
-cd server/
-ls
+..
+cd -
 make
 make clean;make
+cd ProtoFiles/
+git pull
+ls
+rm *~
+ls
+kdk
+ls
+
+ls
+ls
+cd ..
+ls
+git status
+ls
+pwd
+ls
+ls
+ls
+git status
+cd ProtoFiles/
+ls
+git pull
+git pull
+git pull
+ls
+cd ..
+make
+make
+ssh galaxyeye@172.16.0.3
+cd
+ifconfig
+cd ..
+ls
+ls
+./acknowledge 
+ls
+./acknowledge 
+ls
+make
+make clean;
+make
+make
+./acknowledge 
+ls
+ls
+make
+make clean;
+make
+cd ../../
+ls
+make
+make -j80
+make
+make
+ls
+./pw_run.sh 
+./pw_run.sh start
+ps -ef  | grep pw
+cat pw_run.sh 
+./pw_run.sh stop
+./pw_run.sh start
 ls
 cd
+cd pw
 ls
-whereis emacs
-cat /usr/bin/emacs
+./initdb.sh 
+./initdb.sh init
+mysql -uroot 
+mysql -uroot -plsj
 ls
-cd
+ps -u double
+ps -u double
+ps -u double | grep pw
+st
+ps -u double | grep pw
+ps -u double | grep pw
+ps -u double | grep pw
+ps -u double | grep pw
+ps -u double | grep pw
+18228 pts/0    00:00:00 pw_run.sh
+cd log
 ls
-cd emacs/
+ll
+cd ..
 ls
-#test_org#        bbb.q            google-chrome-stable_current_amd64.deb  parallel_world              test.org~
+cd ProtoFiles/
+git pull
+git status
+git diff
+history
+history | grep find
+history
+netstat -nap | grep 8009
+netstat -nap | grep 8009
+netstat -nap 
+git status
+cd ../../
+git status
+pw
+pwd
+git status
+git status
+netstat -nap | grep 8009
+git status
+git pull upstream master
+git pull 
+make clean;
+make -j80
+netstat -nap | grep 8009
+git status
+history
+git status
+cd ~/pw
+netstat -nap | grep 8009
+make -j8
+make clean;
+make -j8
+sudo agt-get install samba
+sudo apt-get install samba
+Processing triggers for ufw (0.35-0ubuntu2) ...
+sudo vi /etc/samba/smb.conf 

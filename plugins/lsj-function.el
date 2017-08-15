@@ -1,3 +1,7 @@
+;;; lsj-function.el --- own function 
+;;; Commentary:
+;;; Code:
+
 (define-prefix-command 'lsj-map)
 (global-set-key (kbd "C-c") 'lsj-map)
 
@@ -13,9 +17,9 @@
   "Add a new line below"
   (interactive)
   (move-end-of-line nil)
-  (newline-and-indent)
-  )
-(global-set-key (kbd "C-c n l") 'lsj-new-line)
+  (newline-and-indent))
+
+(global-set-key (kbd "C-c l") 'lsj-new-line)
 
 (defun lsj-new-shift-line()
   "Add a new line above"
@@ -25,7 +29,7 @@
   (move-end-of-line nil)
   (newline-and-indent)
   )
-(global-set-key (kbd "C-c n L") 'lsj-new-shift-line)
+(global-set-key (kbd "C-c L") 'lsj-new-shift-line)
 
 (defun lsj-copy-line (&optional arg)
   "Save current line into Kill-Ring without mark the line"
@@ -35,6 +39,23 @@
     (copy-region-as-kill beg end))
   )
 (global-set-key (kbd "C-c c l") 'lsj-copy-line)
+
+(defun lsj-copy-line-from-minubuf (arg)
+  "Save current line into Kill-Ring without mark the line"
+  (interactive "nEnter line: ")
+  (save-excursion
+    (goto-line arg)
+    (lsj-copy-line)))
+
+(global-set-key (kbd "C-M-c") 'lsj-copy-line-from-minubuf)
+
+(defun lsj-delete-line-from-minibuf (arg)
+  "Save current line into Kill-Ring without mark the line"
+  (interactive "nEnter line: ")
+  (save-excursion
+    (goto-line arg)
+    (lsj-delete-line-anywhere)))
+(global-set-key (kbd "C-M-d") 'lsj-delete-line-from-minibuf)
 
 (defun lsj-copy-word (&optional arg)
   "Copy words at point"
@@ -54,14 +75,6 @@
   )
 (global-set-key (kbd "C-c d w") 'lsj-delete-word)
 
-(defun lsj-forward-kill-word (&optional arg)
-  "backward kill word"
-  (interactive "P")   
-  (let (beg end)
-    (setq beg (point))
-    (skip-chars-forward " ")
-    (setq end (point))
-    (kill-region beg end)))
 
 (defun lsj-copy-paragraph (&optional arg)
   "Copy paragraphes at point"
@@ -93,11 +106,23 @@
   (interactive)
   (move-end-of-line nil)
   (kill-line)
-  (replace-regexp "[\n\t ]\\{2,\\}" " " nil  (point)  (progn (end-of-line) (point))) )
-
+  (replace-regexp "[\n\t ]\\{2,\\}" " " nil  (point)  (progn (end-of-line) (point))))
 (global-set-key (kbd "C-c j") 'lsj-join-two-line)
 
-(defun lsj-go-to-char (n char) "Move forward to Nth occurence of CHAR."
+(defun lsj-delete-bracket ()
+  (interactive)
+  (let (beg end)
+    (skip-chars-backward "^([{\"\'")
+    (setq beg (point))
+    (skip-chars-forward "^)]}\"\'")
+    (setq end (point))
+    (kill-region beg end)))
+
+(global-set-key (kbd "C-c d r") 'lsj-delete-bracket)
+
+;;
+(defun lsj-go-to-char (n char)
+  "Move forward to Nth occurence of CHAR."
   (interactive "p\ncGo to char: ")
   (search-forward (string char) nil nil n)
   (while (char-equal (read-char)
@@ -110,27 +135,21 @@
   (if (and (< (point) region-end)
            (re-search-forward "\\w+\\W*" region-end t) )
       (1+ (recursive-count-words region-end))
-    0
-    )
-  )
+    0))
 
 (defun lsj-count-words-region (beginning end)
   "Print numbers of words in the region"
   (interactive "r")
   (message "Counting words in region...")
   (save-excursion
-   (goto-char beginning)
-   (let ((count (recursive-count-words end)))
-     (cond ( (zerop count)
-             (message "no words"))
-           ( (= 1 count)
-             (message "1 words") )
-           ( t
-             (message "%d words" count) )
-           )
-     )
-   )
-  )
+    (goto-char beginning)
+    (let ((count (recursive-count-words end)))
+      (cond ( (zerop count)
+              (message "no words"))
+            ( (= 1 count)
+              (message "1 words") )
+            ( t
+              (message "%d words" count) )))))
 
 (global-set-key (kbd "C-c r w") 'lsj-count-words-region )
 
@@ -204,7 +223,7 @@
 
 (global-set-key (kbd "C-c s l") 'lsj-select-line)
 
-;;===============open file from cursor=========
+;;===============open src file at cursor from log=========
 (defun lsj-open-file-at-cursor-from-log()
   "Open file under cursor or select region"
   (interactive)
@@ -238,16 +257,79 @@
                     (message "[%s, %s, %s]" -dir -fpath -num)
                     ))))))))
 
-;;=========== switch between .h .cpp
-(defun switch-source-file ()
+;;=====================open file at cursor from src, eg #include"string.h"===============
+(defun lsj-open-file-at-cursor-from-src()
+  "Open file in #include<file> under cursor from src"
+  (interactive)
+  (let ((-path (let (p0 p1 p2 lsj-regexp-src)
+                 (setq lsj-regexp-src "^\"<>")
+                 (setq p0 (point))
+                 (skip-chars-backward lsj-regexp-src)
+                 (setq p1 (point))
+                 (goto-char p0)
+                 (skip-chars-forward lsj-regexp-src)
+                 (setq p2 (point))
+                 (buffer-substring-no-properties p1 p2))))
+    (progn
+      (let ((-dir (file-name-directory (buffer-file-name))))
+        (if (file-exists-p (concat -dir -path))
+            (find-file (concat -dir -path)))))))
+
+(global-set-key [f7] 'lsj-open-file-at-cursor-from-src)
+
+(defun lsj-open-log-from-buffer2()
+  (interactive)
+  (progn
+    (let ((-file (file-name-sans-extension (file-name-nondirectory (buffer-file-name))))
+          -path)
+      (setq -path (concat "/home/double/parallel_world/log/" -file ".INFO"))
+      (if (file-exists-p -path)
+          (find-file -path)))))
+
+(defun lsj-open-log-from-buffer()
+  (interactive)
+  (progn
+    (let ((-file (file-name-directory (buffer-file-name)))
+          -path)
+      (if (string-match "server" -file)
+          (setq -path "/home/double/parallel_world/log/server.INFO")
+        (setq -path "/home/double/parallel_world/log/gopw.INFO"))
+      (if (file-exists-p -path)
+          (find-file -path))
+      (read-only-mode))))
+
+(global-set-key [f4] 'lsj-open-log-from-buffer)
+
+;;=========== switch between .h/.hpp and .cc/.cpp =================
+(defun lsj-switch-source-file ()
   (interactive)
   (let ((file-name (buffer-file-name)))
-    (if (string-match "\\.cpp" file-name)
-        (find-file (replace-regexp-in-string "\\.cpp" "\.h" file-name)))
-    (if (string-match "\\.h" file-name)
-        (find-file (replace-regexp-in-string "\\.h" "\.cpp" file-name)))))
+    (cond
+     ((string-match "\\.cpp" file-name)
+      (let (match1 match2)
+        (setq match1 (replace-regexp-in-string "\\.cpp" "\.h" file-name))
+        (setq match2 (replace-regexp-in-string "\\.cpp" "\.hpp" file-name))
+        (if (file-exists-p match1)
+            (find-file match1)
+          (find-file match2))))
+     ((string-match "\\.cc" file-name)
+      (let (match1 match2)
+        (setq match1 (replace-regexp-in-string "\\.cc" "\.h" file-name))
+        (setq match2 (replace-regexp-in-string "\\.cc" "\.hpp" file-name))
+        (if (file-exists-p match1)
+            (find-file match1)
+          (find-file match2))))
+     ((string-match "\\.hpp" file-name)
+      (find-file (replace-regexp-in-string "\\.hpp" "\.cpp" file-name)))
+     ((string-match "\\.h" file-name)
+      (let (match1 match2)
+        (setq match1 (replace-regexp-in-string "\\.h" "\.cc" file-name))
+        (setq match2 (replace-regexp-in-string "\\.h" "\.cpp" file-name))
+        (if (file-exists-p match1)
+            (find-file match1)
+          (find-file match2)))))))
 
-(global-set-key [f6] 'switch-source-file)
+(global-set-key [f6] 'lsj-switch-source-file)
 
 ;;=====================
 (defun lsj-copy-file-path (&optional *dir-path-only-p)
@@ -268,5 +350,59 @@ Result is full path."
        (progn
          (message "File path copied: 「%s」" -fpath)
          -fpath )))))
+
+(defun lsj-goto-line-indent()
+  (interactive)
+  (let ((line (read-number "Goto line: ")))
+    (goto-char 0)
+    (forward-line (1- line)))
+  (c-indent-line-or-region))
+
+(global-set-key (kbd "M-g M-g") 'lsj-goto-line-indent)
+
+;; ======================highlight================
+(global-set-key (kbd "M-i") 'highlight-symbol-at-point)
+(global-set-key (kbd "M-n") 'highlight-symbol-next)
+(global-set-key (kbd "M-p") 'highlight-symbol-prev)
+(global-set-key (kbd "M-u") 'highlight-symbol-remove-all)
+
+(defun lsj-get-current-thing ()
+  (interactive)
+  (let ((-thing
+         (let (p0 p1 p2 regexp)
+           (setq regexp "^\"<>() []\t{}")
+           (setq p0 (point))
+           (skip-chars-backward regexp)
+           (setq p1 (point))
+           (goto-char p0)
+           (skip-chars-forward regexp)
+           (setq p2 (point))
+           (buffer-substring-no-properties p1 p2))))
+    (message "%s" -thing)))
+
+(defun lsj-goto-man ()
+  (interactive)
+  (save-excursion
+    (progn
+      (let (-thing -code -buf)
+        (setq -thing (lsj-get-current-thing))
+        (man -thing)
+        (setq -code (read-string "Enter code:"))
+        (if (string= -code "q")
+            (progn
+              (setq -buf (concat "*Man " -thing "*"))
+              (kill-buffer -buf)))))))
+
+(global-set-key (kbd "C-c g m") 'lsj-goto-man)
+
+
+
+;; (defun lsj-open-dir-under-cursor ()
+;;   (interactive)
+;;   (let ((-dir (lsj-get-current-thing)))
+;;     (if (file-exists-p -dir)
+;;         (find-file -dir))))
+;;;;
+
 
 ;;;;lsj_function.el ends here

@@ -4,6 +4,12 @@
 (setq url-cookie-storage
  '((".youdao.com"
   [url-cookie "OUTFOX_SEARCH_USER_ID" "1871166648@115.194.107.114" "24-Feb-2047 07:21:27.00 GMT" "/" ".youdao.com" nil])
+ (".163.com"
+  [url-cookie "usertrack" "c+5+hVjKbBFdqQU1A4PGAg==" "16 Mar 18 10:42:25 [GMT]" "/" ".163.com" nil])
+ ("www.bing.com"
+  [url-cookie "httponly" nil "08-Mar-2019 08:48:01.00 GMT" "/" "www.bing.com" nil]
+  [url-cookie "MUIDB" "2B05EE0AA2D36D272267E430A3726CA4" "08-Mar-2019 08:48:01.00 GMT" "/" "www.bing.com" nil]
+  [url-cookie "SRCHUID" "V=2&GUID=F8AF8AD0FC5C402BA3B4CE6FB6877174" "08-Mar-2019 08:48:00.00 GMT" "/" "www.bing.com" nil])
  (".bing.com"
   [url-cookie "SRCHD" "AF=NOFORM" "03-Mar-2019 07:45:43.00 GMT" "/" ".bing.com" nil]
   [url-cookie "SRCHUSR" "DOB=20170303" "03-Mar-2019 07:45:43.00 GMT" "/" ".bing.com" nil])
@@ -12,7 +18,6 @@
   [url-cookie "MUIDB" "2B05EE0AA2D36D272267E430A3726CA4" "03-Mar-2019 07:45:43.00 GMT" "/" "cn.bing.com" nil]
   [url-cookie "httponly" nil "03-Mar-2019 07:45:43.00 GMT" "/" "cn.bing.com" nil])
  ("bing.com"
-  [url-cookie "httponly" nil "03-Mar-2019 07:45:43.00 GMT" "/" "bing.com" nil]
   [url-cookie "_EDGE_V" "1" "03-Mar-2019 07:45:43.00 GMT" "/" "bing.com" nil]
   [url-cookie "MUID" "2B05EE0AA2D36D272267E430A3726CA4" "03-Mar-2019 07:45:43.00 GMT" "/" "bing.com" nil])
  (".stackoverflow.com"
@@ -25,13 +30,7 @@
   [url-cookie "PSTM" "1486949073" "31 Dec 37 23:55:55 [GMT]" "/" ".baidu.com" nil]))
 )
 (setq url-cookie-secure-storage
- '((".wikipedia.org"
-  [url-cookie "WMF-Last-Access-Global" "03-Mar-2017" "Tue, 04 Apr 2017 00:00:00 GMT" "/" ".wikipedia.org" t]
-  [url-cookie "HttpOnly" nil "Tue, 04 Apr 2017 00:00:00 GMT" "/" ".wikipedia.org" t])
- ("en.wikipedia.org"
-  [url-cookie "WMF-Last-Access" "03-Mar-2017" "Tue, 04 Apr 2017 00:00:00 GMT" "/" "en.wikipedia.org" t]
-  [url-cookie "HttpOnly" nil "Tue, 04 Apr 2017 00:00:00 GMT" "/" "en.wikipedia.org" t]))
-)
+ 'nil)
 
 ;; Local Variables:
 ;; version-control: never

@@ -6,7 +6,28 @@
   [url-cookie "PSTM" "1486949073" "31 Dec 37 23:55:55 [GMT]" "/" ".baidu.com" nil]
   [url-cookie "BIDUPSID" "576B43A942850FC61216C19CBAABF52D" "31 Dec 37 23:55:55 [GMT]" "/" ".baidu.com" nil]
   [url-cookie "max-age" "2147483647" "31 Dec 37 23:55:55 [GMT]" "/" ".baidu.com" nil]
-  [url-cookie "BAIDUID" "576B43A942850FC61216C19CBAABF52D:FG=1" "31 Dec 37 23:55:55 [GMT]" "/" ".baidu.com" nil]))
+  [url-cookie "BAIDUID" "576B43A942850FC61216C19CBAABF52D:FG=1" "31 Dec 37 23:55:55 [GMT]" "/" ".baidu.com" nil])
+ (".stackoverflow.com"
+  [url-cookie "HttpOnly" nil "01-Jan-2055 00:00:00.00 GMT" "/" ".stackoverflow.com" nil]
+  [url-cookie "prov" "a21fce0a-96ac-a7d6-e706-f9615d5c906b" "01-Jan-2055 00:00:00.00 GMT" "/" ".stackoverflow.com" nil])
+ ("bing.com"
+  [url-cookie "MUID" "2B05EE0AA2D36D272267E430A3726CA4" "03-Mar-2019 07:45:43.00 GMT" "/" "bing.com" nil]
+  [url-cookie "_EDGE_V" "1" "03-Mar-2019 07:45:43.00 GMT" "/" "bing.com" nil])
+ ("cn.bing.com"
+  [url-cookie "httponly" nil "03-Mar-2019 07:45:43.00 GMT" "/" "cn.bing.com" nil]
+  [url-cookie "MUIDB" "2B05EE0AA2D36D272267E430A3726CA4" "03-Mar-2019 07:45:43.00 GMT" "/" "cn.bing.com" nil]
+  [url-cookie "SRCHUID" "V=2&GUID=2F82CDB242D14ED7863A47805011C377" "03-Mar-2019 07:45:43.00 GMT" "/" "cn.bing.com" nil])
+ (".bing.com"
+  [url-cookie "SRCHUSR" "DOB=20170303" "03-Mar-2019 07:45:43.00 GMT" "/" ".bing.com" nil]
+  [url-cookie "SRCHD" "AF=NOFORM" "03-Mar-2019 07:45:43.00 GMT" "/" ".bing.com" nil])
+ ("www.bing.com"
+  [url-cookie "SRCHUID" "V=2&GUID=F8AF8AD0FC5C402BA3B4CE6FB6877174" "08-Mar-2019 08:48:00.00 GMT" "/" "www.bing.com" nil]
+  [url-cookie "MUIDB" "2B05EE0AA2D36D272267E430A3726CA4" "08-Mar-2019 08:48:01.00 GMT" "/" "www.bing.com" nil]
+  [url-cookie "httponly" nil "08-Mar-2019 08:48:01.00 GMT" "/" "www.bing.com" nil])
+ (".163.com"
+  [url-cookie "usertrack" "c+5+hVjKbBFdqQU1A4PGAg==" "16 Mar 18 10:42:25 [GMT]" "/" ".163.com" nil])
+ (".youdao.com"
+  [url-cookie "OUTFOX_SEARCH_USER_ID" "1871166648@115.194.107.114" "24-Feb-2047 07:21:27.00 GMT" "/" ".youdao.com" nil]))
 )
 (setq url-cookie-secure-storage
  'nil)

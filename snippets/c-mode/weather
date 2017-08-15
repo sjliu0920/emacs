@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: weather
+# key: weather
+# --
+
+class  $1: public WeatherSys
+{
+public:
+    $1();    
+    Result work();
+};

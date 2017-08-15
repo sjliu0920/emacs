@@ -1,4 +1,4 @@
-;;; lsj_function.el --- own function 
+;;; init-setting.el --- own function 
 ;;; Commentary:
 ;;; Code:
 
@@ -17,27 +17,16 @@
  '(sr-speedbar-right-side nil)
  '(term-default-bg-color "#000000")
  '(term-default-fg-color "#ffffff"))
-       ;; foreground color (yellow)
 
 (set-cursor-color "white")
 (set-mouse-color "black")
 (set-foreground-color "white")
-(set-background-color "black")
 
-;;(set-default-font "Liberation Mono-10")
 (set-frame-font "Liberation Mono-10")
-;;(set-default-font "Monospace-10")
-;;(add-to-list 'default-frame-alist '(font . "Liberation Mono-10"))
-;;(add-to-list 'default-frame-alist '(font . "Monospace-10"))
 (add-to-list 'load-path "~/.emacs.d/plugins/color-theme")
 (require 'color-theme)
 (color-theme-initialize)
-;;(color-theme-vim-colors)
-;;(color-theme-classic)
-;;(color-theme-gray30)
-(set-background-color "#333333")
 (set-background-color "gray15")
-
 
 (tool-bar-mode 0)
 (menu-bar-mode 1)
@@ -52,14 +41,14 @@
 (setq-default indent-tabs-mode nil)
 (setq default-tab-width 4)
 (setq tab-stop-list ())
-(setq sentence-end "\\([°££°£ø]\\|°≠°≠\\|[.?!][]\"')}]*\\($\\|[ \t]\\)\\)[ \t\n]*")
+(setq sentence-end "\\([„ÄÇÔºÅÔºü]\\|‚Ä¶‚Ä¶\\|[.?!][]\"')}]*\\($\\|[ \t]\\)\\)[ \t\n]*")
 (setq sentence-end-double-space nil)
 (setq enable-recursive-minibuffers t)
 (setq scroll-margin 3
        scroll-conservatively 10000)
 (setq default--mode 'text-mode)
 (show-paren-mode t)
-	(setq show-paren-style 'parentheses)
+(setq show-paren-style 'parentheses)
 
 (mouse-avoidance-mode 'animate)
 (mouse-avoidance-mode 'nil)
@@ -88,57 +77,93 @@
 (require 'auto-complete-clang)  
 (setq ac-clang-auto-save t)  
 (setq ac-auto-start t)
-(setq ac-quick-help-delay 0.1) 
+(setq ac-quick-help-delay 0.1)
 (ac-set-trigger-key "TAB") 
 (define-key ac-mode-map  [(control tab)] 'auto-complete)  
 
+(add-to-list 'load-path "~/.emacs.d/plugins/auto-complete-c-headers")
+(add-to-list 'ac-sources 'ac-source-c-headers)
+
+(defun my:ac-c-headers-init ()
+  (require 'auto-complete-c-headers)
+  (add-to-list 'ac-sources 'ac-source-c-headers))
+
 ;; delete below two path
-;; /usr/include
 ;; /usr/include/boost
 
-(defun my-ac-basic-config ()  
+(defun my-ac-basic-config-pw ()  
   (setq ac-clang-flags
 		(mapcar(lambda (item)(concat "-I" item))  
                (split-string  
-                "/usr/include/c++/5
-			/usr/include/x86_64-linux-gnu/c++/5
+			"/home/double/pw/common
+            /home/double/pw/ProtoFiles/src
+            /home/double/pw/pw_switch/src
+            /home/double/pw/pw_switch/include
+            /home/double/pw/pw_robot/src
+            /home/double/pw/pw_robot/include
+            /home/double/pw/pw_space/src
+            /home/double/pw/pw_space/include
+            /home/double/pw/pw_weather/src
+            /home/double/pw/pw_weather/include
+            /home/double/pw/pw_emergency/src
+            /home/double/pw/pw_emergency/include
+            /home/double/pw/pw_timer/include
+            /home/double/pw/pw_timer/timer/src
+            /usr/include/c++/5
+            /usr/include
+            /usr/include/lua5.0
+            /use/include/linux
 			/usr/include/c++/5/backward
-			/usr/lib/gcc/x86_64-linux-gnu/5/include
 			/usr/local/include
-			/usr/local/include/glog
-			/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed
-			/usr/include/x86_64-linux-gnu
+            /usr/include/x86_64-linux-gnu
+            /usr/include/x86_64-linux-gnu/c++/5
+            /usr/include/c++/5/tr1
+            /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed
+            /usr/include/x86_64-linux-gnu
             /usr/include/asm-generic
-			/home/double/parallel_world/engine/include
-			/home/double/parallel_world/gjson/include
-			/home/double/parallel_world/db/include
-            /home/double/parallel_world/gopw/src
-			")))
+            /usr/lib/gcc/x86_64-linux-gnu/5/include
+			/usr/local/include/glog")))
 
   (setq-default ac-sources '(ac-source-abbrev ac-source-dictionary ac-source-words-in-same-mode-buffers))
-  
   (add-hook 'emacs-lisp-mode-hook 'ac-emacs-lisp-mode-setup)  
   (add-hook 'c-mode-common-hook 'ac-cc-mode-setup)  
   (add-hook 'ruby-mode-hook 'ac-ruby-mode-setup)  
   (add-hook 'css-mode-hook 'ac-css-mode-setup)  
-  (add-hook 'auto-complete-mode-hook 'ac-common-setup)  
+  (add-hook 'auto-complete-mode-hook 'ac-common-setup)
   (global-auto-complete-mode t))
 
+(add-hook 'c++-mode-hook 'my:ac-c-headers-init)
+(add-hook 'c-mode-hook 'my:ac-c-headers-init)
+
+;;====compile======
+(global-set-key (kbd "M-g M-p") 'previous-error)
+(global-set-key (kbd "M-g M-n") 'next-error)
+
+;;=====
 (defun my-ac-cc-mode-setup ()  
   (setq ac-sources (append '(ac-source-clang ac-source-yasnippet) ac-sources)))  
 (add-hook 'c-mode-common-hook 'my-ac-cc-mode-setup)  
  ;;ac-source-gtags  
-(my-ac-basic-config)
+(my-ac-basic-config-pw)
 
 (add-hook 'c-mode-common-hook
 		  (lambda ()
 			(when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
 			  (ggtags-mode 1))))
 
+(global-set-key (kbd "M-<f1>") 'gtags-find-file)
+(global-set-key (kbd "M-<f2>") 'gtags-find-tag)
+(global-set-key (kbd "M-<f3>") 'gtags-find-rtag)
+(global-set-key (kbd "M-<f4>") 'gtags-find-symbol)
+(global-set-key (kbd "M-<f5>") 'gtags-find-with-grep)
+
+(global-set-key (kbd "M-0") 'ggtags-prev-mark)
 
 ;; ===============
 (require 'ido)
 (ido-mode t)
+(global-set-key (kbd "s-b") 'ido-switch-buffer)
+(setq ido-enable-flex-matching t)
 
 (require 'sr-speedbar)
 (setq speedbar-use-images nil)
@@ -160,7 +185,7 @@
 (global-set-key (kbd "M-x") 'helm-M-x)
 
 ;;=====================
-(load "lsj_function")
+(load "lsj-function")
 
 ;;==============
 (load "google-c-style")
@@ -169,7 +194,6 @@
 (add-hook 'c-mode-common-hook 'google-make-newline-indent)
 (add-hook 'c++-mode-common-hook 'google-set-c-style)
 (add-hook 'c++-mode-common-hook 'google-make-newline-indent)
-
 
 
 (defun ska-point-to-register()
@@ -193,24 +217,10 @@ that was stored with ska-point-to-register."
 
 (autoload 'table-insert "table" "WYGIWYS table editor")
 
-(add-to-list 'load-path "~/.emacs.d/plugins/xcscope")
-(require 'xcscope)
+;;(add-to-list 'load-path "~/.emacs.d/plugins/xcscope")
+;;(require 'xcscope)
 
 (require 'rect-mark)
-
-(define-key global-map [(control f3)]  'cscope-set-initial-directory)
-(define-key global-map [(control f4)]  'cscope-unset-initial-directory)
-(define-key global-map [(control f5)]  'cscope-find-this-symbol)
-(define-key global-map [(control f6)]  'cscope-find-global-definition)
-(define-key global-map [(control f7)]  'cscope-find-global-definition-no-prompting)
-(define-key global-map [(control f8)]  'cscope-pop-mark)
-(define-key global-map [(control f9)]  'cscope-next-symbol)
-(define-key global-map [(control f10)] 'cscope-next-file)
-(define-key global-map [(control f11)] 'cscope-prev-symbol)
-(define-key global-map [(control f12)] 'cscope-prev-file)
-(define-key global-map [(meta f9)]  'cscope-display-buffer)
-(define-key global-map [(meta f10)] 'cscope-display-buffer-toggle)
-
 
 (defun sb-expand-curren-file ()
   "Expand current file in speedbar buffer"  
@@ -222,26 +232,6 @@ that was stored with ska-point-to-register."
   (speedbar-expand-line))
 
 ;;=================================
-;;(require 'ibuffer)
-;;(global-set-key (kbd "C-x C-b") 'ibuffer)
-;;(autoload 'ibuffer "ibuffer" "Buffer List" t)
-;;(add-to-list 'ibuffer-never-show-regexps "^\\*")
-
-;;(require 'easymenu)
-;;(require 'recentf)
-;;(setq recentf-max-saved-items 100)
-;;(recentf-mode 1)
-;;(defun recentf-open-files-compl ()
-;;  (interactive)
-;;  (let* ((all-files recentf-list)
-;;	 (tocpl (mapcar (function 
-;;			 (lambda (x) (cons (file-name-nondirectory x) x))) all-files))
-;;	 (prompt (append '("File name: ") tocpl))
-;;	 (fname (completing-read (car prompt) (cdr prompt) nil nil)))
-;;  (find-file (cdr (assoc-ignore-representation fname tocpl)))))
-
-;;(global-set-key [(control x)(control r)] 'recentf-open-files-compl)
-
 (load "recentf-buffer")
 (require 'recentf-buffer)               
 (global-set-key (kbd "C-x C-r") 'recentf-open-files-in-simply-buffer)
@@ -270,30 +260,6 @@ that was stored with ska-point-to-register."
 ;; you can select the key you prefer to
 (define-key global-map [(control return)]  'ace-jump-mode)
 
-;; find-file-in-project
-
-;; Yes, I want my copies in the same dir as the original.
-;;(require 'flymake)
-;;(add-hook 'find-file-hook 'flymake-find-file-hook)
-;;(flymake-mode-off)
-;;(setq flymake-run-in-place t)
-
-;; Nope, I want my copies in the system temp dir.
-;;(setq flymake-run-in-place nil)
-;; This lets me say where my temp dir is.
-;;(setq temporary-file-directory "~/.emacs.d/tmp/")
-;; I want to see at most the first 4 errors for a line.
-;;(setq flymake-number-of-errors-to-display 4)
-
-;; I want to see all errors for the line.
-;;(setq flymake-number-of-errors-to-display nil)
-
-;;(autoload 'flymake-find-file-hook "flymake" "" t)
-;;(add-hook 'find-file-hook 'flymake-find-file-hook)
-;;(setq flymake-gui-warnings-enabled t)
-;;(setq flymake-log-level 0)
-;;(setq flymake-no-changes-timeout 0.5)
-
 (add-to-list 'load-path "/home/double/.emacs.d/plugins/yasnippet-master")
 (require 'yasnippet)
 
@@ -310,8 +276,7 @@ that was stored with ska-point-to-register."
 
 ;;====window-number=============
 (require 'window-number)
-(global-set-key (kbd "C-x o") 'window-number-switch)
-;;(global-set-key (kbd "C-x o") 'other-window)
+(global-set-key (kbd "M-o") 'window-number-switch)
 ;;==============
 
 (put 'scroll-up 'unscrollable t)
@@ -366,14 +331,70 @@ that was stored with ska-point-to-register."
 (add-to-list 'load-path "~/.emacs.d/plugins/highlight-symbol")
 (require 'highlight-symbol)
 
-(global-set-key (kbd "C-c C-.") 'highlight-symbol-at-point)
-(global-set-key (kbd "C-c C-n") 'highlight-symbol-next)
-(global-set-key (kbd "C-c C-p") 'highlight-symbol-prev)
-(global-set-key (kbd "C-c C-q") 'highlight-symbol-query-replace)
+;;======================goto-windows======================
+(defun lsj-goto-windows-1 ()
+  "Do something"
+  (interactive)
+  (window-number-select 1))
 
-;;========================major mode ==================
-;; lua-mode
+(defun lsj-goto-windows-2 ()
+  "Do something"
+  (interactive)
+  (window-number-select 2))
 
+(defun lsj-goto-windows-3 ()
+  "Do something"
+  (interactive)
+  (window-number-select 3))
+
+(defun lsj-goto-windows-4 ()
+  "Do something"
+  (interactive)
+  (window-number-select 4))
+
+(global-set-key (kbd "M-1") 'lsj-goto-windows-1)
+(global-set-key (kbd "M-2") 'lsj-goto-windows-2)
+(global-set-key (kbd "M-3") 'lsj-goto-windows-3)
+(global-set-key (kbd "M-4") 'lsj-goto-windows-4)
+;;=======================delete-windows-buffer=============
+(defun lsj-delete-windows-1 ()
+  "Do something"
+  (interactive)
+  (let ((window (nth 0 (window-number-list))))
+    (delete-window window)))
+
+(defun kill-window-buffer (&optional num)
+  "Do something"
+  (interactive)
+  (let ((buffer (buffer-name (window-buffer (nth (1- num) (window-number-list))))))
+    (kill-buffer buffer)))
+
+(defun kill-window-buffer-1 ()
+  "Do something"
+  (interactive)
+  (kill-window-buffer 1))
+
+(defun kill-window-buffer-2 ()
+  "Do something"
+  (interactive)
+  (kill-window-buffer 2))
+
+(defun kill-window-buffer-3 ()
+  "Do something"
+  (interactive)
+  (kill-window-buffer 3))
+
+(defun kill-window-buffer-4 ()
+  "Do something"
+  (interactive)
+  (kill-window-buffer 4))
+
+(global-set-key (kbd "C-M-1") 'kill-window-buffer-1)
+(global-set-key (kbd "C-M-2") 'kill-window-buffer-2)
+(global-set-key (kbd "C-M-3") 'kill-window-buffer-3)
+(global-set-key (kbd "C-M-4") 'kill-window-buffer-4)
+;;========================Major Mode ==================
+;; Lua-mode
 (add-to-list 'load-path "~/.emacs.d/plugins/lua-mode")
 (require 'lua-mode)
 
@@ -386,13 +407,17 @@ that was stored with ska-point-to-register."
 
 (add-to-list 'auto-mode-alist '("\\.q\\'" . quip-mode))
 (require 'quip)
-;;=======================================================
+;;====================lsj-log-mode===================================
+(add-to-list 'load-path "~/.emacs.d/plugins/")
+(require 'lsj-log-mode)
+
+(add-to-list 'auto-mode-alist '("\\.INFO\\'" . lsj-log-mode))
+(add-to-list 'auto-mode-alist '("\\.proto\\'" . c-mode))
 
 ;;elisp high-light
 
 (setq org-src-fontify-natively t)
 
-(set-background-color "#323232")
 
 (add-to-list 'load-path "~/.emacs.d/plugins/diredful")
 (require 'diredful)
@@ -450,5 +475,147 @@ that was stored with ska-point-to-register."
 (require 'eww)
 (setq xah-lookup-browser-function 'eww)
 
+;; (hl-line-mode)
 ;;;;
 
+
+;;===============org=============
+;;(setq org-image-actual-width t)
+;;(setq org-image-actual-width '(100))
+;;(setq org-html-inline-images t)
+
+;;========template====
+
+(require 'template)
+(template-initialize)
+(dolist (cmd '(ido-select-text ido-magic-forward-char
+                               ido-exit-minibuffer))
+  (add-to-list 'template-find-file-commands cmd))
+
+
+;;=============abbrev=======
+;; (load "~/.emacs.d/plugins/lsj-abbrev.el")
+
+(defcustom xah-shell-abbrev-alist nil "alist of xah's shell abbrevs")
+
+(setq xah-shell-abbrev-alist
+      '(
+        ("cdpw" . "cd ~/pw")
+        ("netstat" . "netstat -nap | grep 8009")
+        ("find-sed-delete" . "find . -name '*.cpp' | xargs grep 'std::LOG' -l | xargs sed -i \"s/std::LOG/LOG/g\"")
+        ("find-cpp-h" . "find . -name '*.h' -o '*.cpp'")
+        ("query-replace-regexp" . "(query-replace-regexp \" = [0-9]\\\\{1,2\\\\}\" \"\")")
+        ("apt-get install" . "sudo apt-get install ")
+        ("git-status" . "git status")
+        ("git-stash" . "git stash")
+        ("git-commit" . "git commit -m 'modify'")
+        ("git-reset" . "git reset")
+        ("git-check" . "git checkout")
+        ("git-push" . "git push origin master")
+        ("git-pull" . "git pull ")
+        ("git-clone pw" . "git@172.16.0.2:liushuangjian/parallel_world.git")
+        ))
+
+(defun xah-shell-commands (*cmd-abbrev)
+  "insert shell command from a list of abbrevs."
+  (interactive
+   (list
+    (ido-completing-read "shell abbrevs:"
+                         (mapcar (lambda (x) (car x)) xah-shell-abbrev-alist) "PREDICATE" "REQUIRE-MATCH")))
+  (progn
+    (insert (cdr (assoc *cmd-abbrev xah-shell-abbrev-alist)))))
+
+(global-set-key (kbd "C-0") 'xah-shell-commands)
+
+;;============set evn===========
+(setenv "PATH"
+  (concat
+   "C:/cygwin/bin" ";"
+   (getenv "PATH")
+  ))
+
+(setenv "ORACLE_HOME" "/opt/oracle/11.2/client64")
+(setenv "LD_LIBRARY_PATH" "/home/double/parallel_world/lib:/lib:/lib:/lib:/opt/oracle/11.2/client64/lib")
+
+(setenv "LC_CTYPE" "zh_CN.UTF-8")
+
+;;==============Êã¨Âè∑Èó¥Ë∑≥ËΩ¨===========
+(global-set-key (kbd "C->") 'forward-sexp)
+(global-set-key (kbd "C-<") 'backward-sexp)
+;;;;
+
+;;================xah-fly-keys========
+;;(add-to-list 'load-path "~/.emacs.d/plugins/xah-fly-keys/")
+;;(require 'xah-fly-keys)
+
+;;(xah-fly-keys-set-layout "qwerty") ; required if you use qwerty ;;_
+;;(xah-fly-set-layout "dvorak") ; by default, it's dvorak
+
+;;(xah-fly-keys 0)
+
+;;===================
+(require 'multiple-cursors)
+
+(global-set-key (kbd "C-c C-m") 'mc/mark-all-symbols-like-this)
+(global-set-key (kbd "C-c C-p") 'mc/mark-all-symbols-like-this-in-defun)
+;;(global-unset-key (kbd "M-<down-mouse-1>"))
+(global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click)
+
+;;=============
+(defun xah-run-current-file ()
+  (interactive)
+  (let (
+        ($suffix-map
+         ;; (‚Äπextension‚Ä∫ . ‚Äπshell program name‚Ä∫)
+         `(
+           ("php" . "php")
+           ("pl" . "perl")
+           ("py" . "python")
+           ("py3" . ,(if (string-equal system-type "windows-nt") "c:/Python32/python.exe" "python3"))
+           ("rb" . "ruby")
+           ("go" . "go run")
+           ("hs" . "runhaskell")
+           ("js" . "node") ; node.js
+           ("ts" . "tsc --alwaysStrict --lib DOM,ES2015,DOM.Iterable,ScriptHost --target ES5") ; TypeScript
+           ("sh" . "bash")
+           ("clj" . "java -cp /home/xah/apps/clojure-1.6.0/clojure-1.6.0.jar clojure.main")
+           ("rkt" . "racket")
+           ("ml" . "ocaml")
+           ("vbs" . "cscript")
+           ("tex" . "pdflatex")
+           ("latex" . "pdflatex")
+           ("java" . "javac")
+           ;; ("pov" . "/usr/local/bin/povray +R2 +A0.1 +J1.2 +Am2 +Q9 +H480 +W640")
+           ))
+        $fname
+        $fSuffix
+        $prog-name
+        $cmd-str)
+    (when (not (buffer-file-name)) (save-buffer))
+    (when (buffer-modified-p) (save-buffer))
+    (setq $fname (buffer-file-name))
+    (setq $fSuffix (file-name-extension $fname))
+    (setq $prog-name (cdr (assoc $fSuffix $suffix-map)))
+    (setq $cmd-str (concat $prog-name " \""   $fname "\""))
+    (cond
+     ((string-equal $fSuffix "el") (load $fname))
+     ((string-equal $fSuffix "go")
+      (when (fboundp 'gofmt)
+        (gofmt)
+        (shell-command $cmd-str "*xah-run-current-file output*" )))
+     ((string-equal $fSuffix "java")
+      (progn
+        (shell-command $cmd-str "*xah-run-current-file output*" )
+        (shell-command
+         (format "java %s" (file-name-sans-extension (file-name-nondirectory $fname))))))
+     (t (if $prog-name
+            (progn
+              (message "Running‚Ä¶")
+              (shell-command $cmd-str "*xah-run-current-file output*" ))
+          (message "No recognized program file suffix for this file."))))))
+
+(global-set-key (kbd "<f8>") 'xah-run-current-file)
+
+(require 'find-file-in-project)
+
+(setq ffip-project-root "~/pw/")

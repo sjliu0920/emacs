@@ -1,6 +1,28 @@
-;; -*- emacs-lisp -*- <17/01/17 10:36:53 /home/double/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <17/06/03 09:06:00 /home/double/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
-((["scp" nil "find" nil nil]
-  nil))
+((["ssh" "galaxyeye" "172.16.0.3" nil nil]
+  ("locale" "LC_ALL=en_US.utf8")
+  ("uname" "Linux 4.8.0-49-generic")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
+  ("remote-shell" "/bin/sh")
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")
+  ("file-exists" "test -e")
+  ("readlink" "\\readlink")
+  ("stat" "\\stat")
+  ("id" "/usr/bin/id")
+  ("gid-integer" 1000)
+  ("gid-string" "galaxyeye")
+  ("git" "\\git")
+  ("~" "/home/galaxyeye")
+  ("ls" "/bin/ls --color=never")
+  ("uid-integer" 1000)
+  ("tmpdir" "/ssh:galaxyeye@172.16.0.3:/tmp")
+  ("touch-t" t)
+  ("touch" "\\touch")
+  ("ls-dired" t)))

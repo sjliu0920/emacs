@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: msg_temp_src
+# key: msg_temp_src
+# --
+
+// $1
+template <class T>
+$1<T>::$1(int fd, int cmd, int target)
+        : CPWMsg<T>::CPWMsg(fd, cmd, target)
+{
+}
+
+template <class T>
+void $1<T>::AddPBMsgBody(void* info)
+{
+}
+

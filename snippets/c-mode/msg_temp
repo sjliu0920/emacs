@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: msg_temp
+# key: msg_temp
+# --
+
+template <class T>
+class $1 : public CPWMsg<T>
+{
+public:
+    $1(int fd, int cmd, int target);
+    void SetMsgHeader(NetProto::MsgSrc src, const string& robot_id);
+    void AddPBMsgBody();
+};
+
